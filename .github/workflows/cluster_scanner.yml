@@ -35,6 +35,10 @@ jobs:
         run: |
           git config user.name "cluster-scanner-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add cluster_state.json
-          git diff --staged --quiet || git commit -m "update cluster state"
-          git push
+          if [ -f cluster_state.json ]; then
+            git add cluster_state.json
+            git diff --staged --quiet || git commit -m "update cluster state"
+            git push
+          else
+            echo "No cluster_state.json produced this run (no cluster found / market closed) — nothing to commit."
+          fi
