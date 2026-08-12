@@ -1,9 +1,9 @@
 """
 Cluster Scanner — Botak & Engulfing
 Scans KNOWN_STOCKS for today's bar matching the "botak" or "bullish engulfing"
-pattern, groups hits by industry, and emails an alert if any industry has
-enough same-day hits to count as a cluster (mirrors the thresholds used in
-the Streamlit dashboard: engulfing > 1 ticker per industry, botak > 2).
+pattern, groups hits by industry, and sends a Telegram alert if any industry
+has enough same-day hits to count as a cluster (mirrors the thresholds used
+in the Streamlit dashboard: engulfing > 1 ticker per industry, botak > 2).
 
 Intended to be run on a schedule (every 30 min during market hours) by
 GitHub Actions. Safe to also run manually / locally for testing.
@@ -12,9 +12,8 @@ GitHub Actions. Safe to also run manually / locally for testing.
 import os
 import sys
 import json
-import smtplib
 import datetime
-from email.mime.text import MIMEText
+import requests
 from zoneinfo import ZoneInfo
 
 import pandas as pd
@@ -25,12 +24,8 @@ from config import INDUSTRIES, KNOWN_STOCKS
 # ------------------------------------------------------------------------
 # CONFIG
 # ------------------------------------------------------------------------
-EMAIL_FROM = os.environ["EMAIL_FROM"]
-EMAIL_TO = [e.strip() for e in os.environ["EMAIL_TO"].split(",") if e.strip()]
-EMAIL_APP_PASSWORD = os.environ["EMAIL_APP_PASSWORD"]
-
-SMTP_SERVER = "smtp.gmail.com"
-SMTP_PORT = 587
+TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 STATE_FILE = "cluster_state.json"
 
@@ -129,22 +124,16 @@ def save_state(state):
 
 
 # ------------------------------------------------------------------------
-# EMAIL
+# TELEGRAM
 # ------------------------------------------------------------------------
-def send_email(subject: str, body: str):
-    msg = MIMEText(body)
-    msg["Subject"] = subject
-    msg["From"] = EMAIL_FROM
-    msg["To"] = ", ".join(EMAIL_TO)
-
-    server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
-    try:
-        server.ehlo()
-        server.starttls()
-        server.login(EMAIL_FROM, EMAIL_APP_PASSWORD)
-        server.sendmail(EMAIL_FROM, EMAIL_TO, msg.as_string())
-    finally:
-        server.quit()
+def send_telegram(text: str):
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    resp = requests.post(
+        url,
+        data={"chat_id": TELEGRAM_CHAT_ID, "text": text},
+        timeout=15,
+    )
+    resp.raise_for_status()
 
 
 # ------------------------------------------------------------------------
@@ -199,14 +188,14 @@ def main():
         for ind, tickers in sorted(engulf_clusters.items()):
             lines.append(f"  {ind}: {', '.join(tickers)}")
 
-    body = "\n".join(lines)
     subject = (
         f"Cluster Alert: {len(botak_clusters)} Botak / "
         f"{len(engulf_clusters)} Engulfing industries"
     )
+    body = "\n".join([subject, ""] + lines)
 
-    send_email(subject, body)
-    print("Email sent:", subject)
+    send_telegram(body)
+    print("Telegram message sent:", subject)
 
     save_state({"date": today_str, "sig": sig})
 
