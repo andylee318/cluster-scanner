@@ -1,5 +1,5 @@
 """
-Cluster Scanner  Botak & Engulfing
+Cluster Scanner — Botak & Engulfing
 Scans KNOWN_STOCKS for today's bar matching the "botak" or "bullish engulfing"
 pattern, groups hits by industry, and sends a Telegram alert if any industry
 has enough same-day hits to count as a cluster (mirrors the thresholds used
@@ -29,7 +29,7 @@ TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 STATE_FILE = "cluster_state.json"
 
-# Thresholds  mirrors the original Streamlit logic:
+# Thresholds — mirrors the original Streamlit logic:
 #   engulf_industry_count > 1   -> at least 2 tickers
 #   botak_industry_count  > 2   -> at least 3 tickers
 ENGULF_MIN_PER_INDUSTRY = 2
@@ -43,7 +43,7 @@ MARKET_TZ = ZoneInfo("America/New_York")
 # ------------------------------------------------------------------------
 def is_market_open_now() -> bool:
     """True on NYSE trading hours (weekday 9:30am-4:00pm ET).
-    Does NOT account for market holidays  GitHub Actions will still fire
+    Does NOT account for market holidays — GitHub Actions will still fire
     on holidays, but this script will just find no fresh clusters and
     (harmlessly) do nothing since price data won't have moved."""
     now_et = datetime.datetime.now(MARKET_TZ)
@@ -141,7 +141,7 @@ def send_telegram(text: str):
 # ------------------------------------------------------------------------
 def main():
     if not is_market_open_now():
-        print("Market closed right now (ET)  skipping.")
+        print("Market closed right now (ET) — skipping.")
         return
 
     if not INDUSTRIES or not KNOWN_STOCKS:
@@ -172,12 +172,10 @@ def main():
 
     state = load_state()
     if state.get("date") == today_str and state.get("sig") == sig:
-        print("Identical clusters to the last alert sent today  skipping duplicate email.")
+        print("Identical clusters to the last alert sent today — skipping duplicate email.")
         return
 
-    # Keep the detailed cluster lines for local logging/printing, but don't include
-    # them in the Telegram message. Telegram will receive a concise subject-only alert.
-    lines = [f"Cluster Scan  {now_et.strftime('%Y-%m-%d %H:%M %Z')}", ""]
+    lines = [f"Cluster Scan — {now_et.strftime('%Y-%m-%d %H:%M %Z')}", ""]
 
     if botak_clusters:
         lines.append(f"BOTAK CLUSTER ({len(botak_clusters)} industries):")
@@ -194,9 +192,7 @@ def main():
         f"Cluster Alert: {len(botak_clusters)} Botak / "
         f"{len(engulf_clusters)} Engulfing industries"
     )
-
-    # Send only the subject in Telegram to avoid printing the full cluster details.
-    body = subject
+    body = "\n".join([subject, ""] + lines)
 
     send_telegram(body)
     print("Telegram message sent:", subject)
