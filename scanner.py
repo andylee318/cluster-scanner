@@ -175,24 +175,28 @@ def main():
         print("Identical clusters to the last alert sent today — skipping duplicate email.")
         return
 
-    lines = [f"Cluster Scan — {now_et.strftime('%Y-%m-%d %H:%M %Z')}", ""]
+    # build a short count header ("is" style) and include the detailed blocks below
+    summary = [f"{len(botak_clusters)} Botak", f"{len(engulf_clusters)} Engulfing", ""]
 
+    details = []
     if botak_clusters:
-        lines.append(f"BOTAK CLUSTER ({len(botak_clusters)} industries):")
+        details.append(f"BOTAK ({len(botak_clusters)} industries):")
         for ind, tickers in sorted(botak_clusters.items()):
-            lines.append(f"  {ind}: {', '.join(tickers)}")
-        lines.append("")
+            details.append(f"  {ind}: {', '.join(tickers)}")
+        details.append("")
 
     if engulf_clusters:
-        lines.append(f"ENGULFING CLUSTER ({len(engulf_clusters)} industries):")
+        details.append(f"ENGULFING ({len(engulf_clusters)} industries):")
         for ind, tickers in sorted(engulf_clusters.items()):
-            lines.append(f"  {ind}: {', '.join(tickers)}")
+            details.append(f"  {ind}: {', '.join(tickers)}")
 
     subject = (
         f"Cluster Alert: {len(botak_clusters)} Botak / "
         f"{len(engulf_clusters)} Engulfing industries"
     )
-    body = "\n".join([subject, ""] + lines)
+
+    # compose the Telegram message using the new format requested
+    body = "\n".join(summary + details)
 
     send_telegram(body)
     print("Telegram message sent:", subject)
