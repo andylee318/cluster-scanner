@@ -182,7 +182,7 @@ def main():
     if botak_clusters:
         details.append(f"BOTAK ({len(botak_clusters)} industries):")
         for ind, tickers in sorted(botak_clusters.items()):
-            details.append(f"  {ind}: {', '.join(tickers)}")
+            details.append(f"  {ind} = {', '.join(tickers)}")
         details.append("")
 
     if engulf_clusters:
