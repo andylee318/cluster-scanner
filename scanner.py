@@ -95,7 +95,17 @@ def detect_engulfing_today(df: pd.DataFrame) -> bool:
     h1, l1 = df["High"].iloc[-2], df["Low"].iloc[-2]
     return bool((o0 < l1) and (c0 > h1) and (c0 > 20))
 
-
+def compute_range_pct_moves(dfs):
+    """Compute % change from first Close to last Close within the downloaded
+    date range (the full 5d window) for each ticker. Returns {ticker: pct_change}."""
+    moves = {}
+    for t, df in dfs.items():
+        first_close = df["Close"].iloc[0]
+        last_close = df["Close"].iloc[-1]
+        if first_close > 0:
+            moves[t] = (last_close - first_close) / first_close * 100
+    return moves
+    
 def build_industry_clusters(hits_set, min_count):
     clusters = {}
     for industry, tickers in INDUSTRIES.items():
@@ -157,6 +167,11 @@ def main():
     botak_hits = {t for t, df in dfs.items() if detect_botak_today(df)}
     engulf_hits = {t for t, df in dfs.items() if detect_engulfing_today(df)}
 
+    botak_hits = {t for t, df in dfs.items() if detect_botak_today(df)}
+    engulf_hits = {t for t, df in dfs.items() if detect_engulfing_today(df)}
+
+    range_moves = compute_range_pct_moves(dfs)  # NEW: added for top movers section
+
     botak_clusters = build_industry_clusters(botak_hits, BOTAK_MIN_PER_INDUSTRY)
     engulf_clusters = build_industry_clusters(engulf_hits, ENGULF_MIN_PER_INDUSTRY)
 
@@ -189,6 +204,14 @@ def main():
         details.append(f"ENGULFING ({len(engulf_clusters)} industries):")
         for ind, tickers in sorted(engulf_clusters.items()):
             details.append(f"  {ind}: {', '.join(tickers)}")
+
+    if range_moves:
+        top_gainer = max(range_moves, key=range_moves.get)
+        top_loser = min(range_moves, key=range_moves.get)
+        details.append("")
+        details.append("TOP MOVERS (range: full downloaded period):")
+        details.append(f"  Highest Up %: {top_gainer} ({range_moves[top_gainer]:+.2f}%)")
+        details.append(f"  Highest Drop %: {top_loser} ({range_moves[top_loser]:+.2f}%)")
 
     subject = (
         f"Cluster Alert: {len(botak_clusters)} Botak / "
