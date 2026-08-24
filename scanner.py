@@ -1,9 +1,13 @@
 """
-Cluster Scanner — Botak & Engulfing
+Cluster Scanner — Botak & Engulfing + Record Breakers
 Scans KNOWN_STOCKS for today's bar matching the "botak" or "bullish engulfing"
 pattern, groups hits by industry, and sends a Telegram alert if any industry
 has enough same-day hits to count as a cluster (mirrors the thresholds used
 in the Streamlit dashboard: engulfing > 1 ticker per industry, botak > 2).
+
+Also scans every ticker's own daily close-to-close % change history over
+RECORD_LOOKBACK_PERIOD and flags any ticker where TODAY's % move is a new
+all-time high (within that window) single-day % up-move or % down-move.
 
 Intended to be run on a schedule (every 30 min during market hours) by
 GitHub Actions. Safe to also run manually / locally for testing.
@@ -35,6 +39,11 @@ STATE_FILE = "cluster_state.json"
 ENGULF_MIN_PER_INDUSTRY = 2
 BOTAK_MIN_PER_INDUSTRY = 3
 
+# How far back to look when establishing each ticker's own record for the
+# single-day highest % up-move and highest % down-move. Adjust as needed
+# (e.g. "6mo", "2y", "5y") — longer = harder record to break, more meaningful.
+RECORD_LOOKBACK_PERIOD = "1y"
+
 MARKET_TZ = ZoneInfo("America/New_York")
 
 
@@ -57,9 +66,11 @@ def is_market_open_now() -> bool:
 # ------------------------------------------------------------------------
 # DATA + PATTERN DETECTION
 # ------------------------------------------------------------------------
-def download_data(tickers):
+def download_data(tickers, period="5d"):
+    """Download OHLC data for `tickers` over `period` (daily interval).
+    Returns {ticker: DataFrame} for tickers with at least 2 valid rows."""
     raw = yf.download(
-        tickers, period="5d", interval="1d", progress=False, auto_adjust=True
+        tickers, period=period, interval="1d", progress=False, auto_adjust=True
     )
     dfs = {}
     for t in tickers:
@@ -95,17 +106,7 @@ def detect_engulfing_today(df: pd.DataFrame) -> bool:
     h1, l1 = df["High"].iloc[-2], df["Low"].iloc[-2]
     return bool((o0 < l1) and (c0 > h1) and (c0 > 20))
 
-def compute_range_pct_moves(dfs):
-    """Compute % change from first Close to last Close within the downloaded
-    date range (the full 5d window) for each ticker. Returns {ticker: pct_change}."""
-    moves = {}
-    for t, df in dfs.items():
-        first_close = df["Close"].iloc[0]
-        last_close = df["Close"].iloc[-1]
-        if first_close > 0:
-            moves[t] = (last_close - first_close) / first_close * 100
-    return moves
-    
+
 def build_industry_clusters(hits_set, min_count):
     clusters = {}
     for industry, tickers in INDUSTRIES.items():
@@ -115,8 +116,47 @@ def build_industry_clusters(hits_set, min_count):
     return clusters
 
 
+def find_record_breakers(record_dfs):
+    """
+    For each ticker, compute its daily close-to-close % change history over
+    RECORD_LOOKBACK_PERIOD. Split off TODAY's % change from the rest of the
+    history, and check whether today's move is a NEW record (higher than
+    every prior % up-move, or lower than every prior % down-move).
+
+    Returns (new_up_records, new_down_records), each a dict:
+        {ticker: {"today_pct": float, "prior_record_pct": float}}
+    """
+    new_up_records = {}
+    new_down_records = {}
+
+    for t, df in record_dfs.items():
+        pct_changes = df["Close"].pct_change().dropna() * 100  # vectorized
+        if len(pct_changes) < 2:
+            continue  # need at least 1 prior day + today to compare
+
+        today_pct = pct_changes.iloc[-1]
+        history = pct_changes.iloc[:-1]
+
+        prior_max_up = history.max()
+        prior_max_down = history.min()
+
+        if today_pct > prior_max_up:
+            new_up_records[t] = {
+                "today_pct": today_pct,
+                "prior_record_pct": prior_max_up,
+            }
+
+        if today_pct < prior_max_down:
+            new_down_records[t] = {
+                "today_pct": today_pct,
+                "prior_record_pct": prior_max_down,
+            }
+
+    return new_up_records, new_down_records
+
+
 # ------------------------------------------------------------------------
-# STATE (avoid re-emailing the exact same cluster set every 30 min)
+# STATE (avoid re-emailing the exact same result set every 30 min)
 # ------------------------------------------------------------------------
 def load_state():
     if os.path.exists(STATE_FILE):
@@ -160,38 +200,52 @@ def main():
         sys.exit(1)
 
     all_tickers = sorted(set(KNOWN_STOCKS))
+
     print(f"Downloading data for {len(all_tickers)} tickers...")
-    dfs = download_data(all_tickers)
+    dfs = download_data(all_tickers, period="5d")
     print(f"Got data for {len(dfs)} tickers.")
 
-    botak_hits = {t for t, df in dfs.items() if detect_botak_today(df)}
-    engulf_hits = {t for t, df in dfs.items() if detect_engulfing_today(df)}
+    print(f"Downloading {RECORD_LOOKBACK_PERIOD} history for record check...")
+    record_dfs = download_data(all_tickers, period=RECORD_LOOKBACK_PERIOD)
+    print(f"Got record-lookback data for {len(record_dfs)} tickers.")
 
     botak_hits = {t for t, df in dfs.items() if detect_botak_today(df)}
     engulf_hits = {t for t, df in dfs.items() if detect_engulfing_today(df)}
-
-    range_moves = compute_range_pct_moves(dfs)  # NEW: added for top movers section
 
     botak_clusters = build_industry_clusters(botak_hits, BOTAK_MIN_PER_INDUSTRY)
     engulf_clusters = build_industry_clusters(engulf_hits, ENGULF_MIN_PER_INDUSTRY)
 
-    if not botak_clusters and not engulf_clusters:
-        print("No clusters found this run.")
+    new_up_records, new_down_records = find_record_breakers(record_dfs)
+
+    if not botak_clusters and not engulf_clusters and not new_up_records and not new_down_records:
+        print("No clusters or record breakers found this run.")
         return
 
     now_et = datetime.datetime.now(MARKET_TZ)
     today_str = now_et.strftime("%Y-%m-%d")
     sig = json.dumps(
-        {"botak": botak_clusters, "engulf": engulf_clusters}, sort_keys=True
+        {
+            "botak": botak_clusters,
+            "engulf": engulf_clusters,
+            "up_records": sorted(new_up_records.keys()),
+            "down_records": sorted(new_down_records.keys()),
+        },
+        sort_keys=True,
     )
 
     state = load_state()
     if state.get("date") == today_str and state.get("sig") == sig:
-        print("Identical clusters to the last alert sent today — skipping duplicate email.")
+        print("Identical results to the last alert sent today — skipping duplicate email.")
         return
 
     # build a short count header ("is" style) and include the detailed blocks below
-    summary = [f"{len(botak_clusters)} Botak", f"{len(engulf_clusters)} Engulfing", ""]
+    summary = [
+        f"{len(botak_clusters)} Botak",
+        f"{len(engulf_clusters)} Engulfing",
+        f"{len(new_up_records)} New Up Records",
+        f"{len(new_down_records)} New Down Records",
+        "",
+    ]
 
     details = []
     if botak_clusters:
@@ -204,21 +258,37 @@ def main():
         details.append(f"ENGULFING ({len(engulf_clusters)} industries):")
         for ind, tickers in sorted(engulf_clusters.items()):
             details.append(f"  {ind}: {', '.join(tickers)}")
-
-    if range_moves:
-        top_gainer = max(range_moves, key=range_moves.get)
-        top_loser = min(range_moves, key=range_moves.get)
         details.append("")
-        details.append("TOP MOVERS (range: full downloaded period):")
-        details.append(f"  Highest Up %: {top_gainer} ({range_moves[top_gainer]:+.2f}%)")
-        details.append(f"  Highest Drop %: {top_loser} ({range_moves[top_loser]:+.2f}%)")
+
+    if new_up_records:
+        details.append(
+            f"NEW {RECORD_LOOKBACK_PERIOD} HIGH DAY % UP RECORDS ({len(new_up_records)} tickers):"
+        )
+        for t, info in sorted(new_up_records.items(), key=lambda x: -x[1]["today_pct"]):
+            details.append(
+                f"  {t}: today +{info['today_pct']:.2f}% "
+                f"(prior record +{info['prior_record_pct']:.2f}%)"
+            )
+        details.append("")
+
+    if new_down_records:
+        details.append(
+            f"NEW {RECORD_LOOKBACK_PERIOD} HIGH DAY % DROP RECORDS ({len(new_down_records)} tickers):"
+        )
+        for t, info in sorted(new_down_records.items(), key=lambda x: x[1]["today_pct"]):
+            details.append(
+                f"  {t}: today {info['today_pct']:.2f}% "
+                f"(prior record {info['prior_record_pct']:.2f}%)"
+            )
 
     subject = (
         f"Cluster Alert: {len(botak_clusters)} Botak / "
-        f"{len(engulf_clusters)} Engulfing industries"
+        f"{len(engulf_clusters)} Engulfing / "
+        f"{len(new_up_records)} Up-Records / "
+        f"{len(new_down_records)} Down-Records"
     )
 
-    # compose the Telegram message using the new format requested
+    # compose the Telegram message
     body = "\n".join(summary + details)
 
     send_telegram(body)
