@@ -374,51 +374,51 @@ def main():
 
     # build a short count header ("is" style) and include the detailed blocks below
     summary = [
-        f"{len(botak_clusters)} Botak",
-        f"{len(engulf_clusters)} Engulfing",
-        f"{len(upper_wick_clusters)} Long Upper Wick",
-        f"{len(lower_wick_clusters)} Long Bottom Wick",
-        f"{len(volume_clusters)} Volume",
-        f"{len(new_up_records)} New Up Records",
-        f"{len(new_down_records)} New Down Records",
-        f"{len(volatility_hits)} Volatility Z-Score",
+        f"🔄 {len(engulf_clusters)} Engulfing",
+        f"🧑‍🦲 {len(botak_clusters)} Botak",
+        f"✅ {len(lower_wick_clusters)} Long Bottom Wick",
+        f"❌ {len(upper_wick_clusters)} Long Upper Wick",
+        f"📊 {len(volume_clusters)} Volume",
+        f"🚀 {len(new_up_records)} New Up Records",
+        f"📉 {len(new_down_records)} New Down Records",
+        f"⚡ {len(volatility_hits)} Volatility Z-Score",
         "",
     ]
 
     details = []
-    if botak_clusters:
-        details.append(f"BOTAK ({len(botak_clusters)} industries):")
-        for ind, tickers in sorted(botak_clusters.items()):
-            details.append(f"  {ind} = {', '.join(tickers)}")
-        details.append("")
-
     if engulf_clusters:
-        details.append(f"ENGULFING ({len(engulf_clusters)} industries):")
+        details.append(f"🔄 ENGULFING ({len(engulf_clusters)} industries):")
         for ind, tickers in sorted(engulf_clusters.items()):
             details.append(f"  {ind}: {', '.join(tickers)}")
         details.append("")
 
-    if upper_wick_clusters:
-        details.append(f"LONG UPPER WICK ({len(upper_wick_clusters)} industries):")
-        for ind, tickers in sorted(upper_wick_clusters.items()):
-            details.append(f"  {ind}: {', '.join(tickers)}")
+    if botak_clusters:
+        details.append(f"🧑‍🦲 BOTAK ({len(botak_clusters)} industries):")
+        for ind, tickers in sorted(botak_clusters.items()):
+            details.append(f"  {ind} = {', '.join(tickers)}")
         details.append("")
 
     if lower_wick_clusters:
-        details.append(f"LONG BOTTOM WICK ({len(lower_wick_clusters)} industries):")
+        details.append(f"✅ LONG BOTTOM WICK ({len(lower_wick_clusters)} industries):")
         for ind, tickers in sorted(lower_wick_clusters.items()):
             details.append(f"  {ind}: {', '.join(tickers)}")
         details.append("")
 
+    if upper_wick_clusters:
+        details.append(f"❌ LONG UPPER WICK ({len(upper_wick_clusters)} industries):")
+        for ind, tickers in sorted(upper_wick_clusters.items()):
+            details.append(f"  {ind}: {', '.join(tickers)}")
+        details.append("")
+
     if volume_clusters:
-        details.append(f"VOLUME ({len(volume_clusters)} industries):")
+        details.append(f"📊 VOLUME ({len(volume_clusters)} industries):")
         for ind, tickers in sorted(volume_clusters.items()):
             details.append(f"  {ind}: {', '.join(tickers)}")
         details.append("")
 
     if new_up_records:
         details.append(
-            f"NEW {RECORD_LOOKBACK_PERIOD} HIGH DAY % UP RECORDS ({len(new_up_records)} tickers):"
+            f"🚀 NEW {RECORD_LOOKBACK_PERIOD} HIGH DAY % UP RECORDS ({len(new_up_records)} tickers):"
         )
         for t, info in sorted(new_up_records.items(), key=lambda x: -x[1]["today_pct"]):
             details.append(
@@ -429,7 +429,7 @@ def main():
 
     if new_down_records:
         details.append(
-            f"NEW {RECORD_LOOKBACK_PERIOD} HIGH DAY % DROP RECORDS ({len(new_down_records)} tickers):"
+            f"📉 NEW {RECORD_LOOKBACK_PERIOD} HIGH DAY % DROP RECORDS ({len(new_down_records)} tickers):"
         )
         for t, info in sorted(new_down_records.items(), key=lambda x: x[1]["today_pct"]):
             details.append(
@@ -440,7 +440,7 @@ def main():
 
     if volatility_hits:
         details.append(
-            f"VOLATILITY Z-SCORE >= {VOLATILITY_Z_THRESHOLD} ({len(volatility_hits)} tickers):"
+            f"⚡ VOLATILITY Z-SCORE >= {VOLATILITY_Z_THRESHOLD} ({len(volatility_hits)} tickers):"
         )
         for t, info in sorted(volatility_hits.items(), key=lambda x: -x[1]["z"]):
             sign = "+" if info["pct"] >= 0 else ""
@@ -449,10 +449,10 @@ def main():
             )
 
     subject = (
-        f"Cluster Alert: {len(botak_clusters)} Botak / "
-        f"{len(engulf_clusters)} Engulfing / "
-        f"{len(upper_wick_clusters)} UpperWick / "
+        f"Cluster Alert: {len(engulf_clusters)} Engulfing / "
+        f"{len(botak_clusters)} Botak / "
         f"{len(lower_wick_clusters)} LowerWick / "
+        f"{len(upper_wick_clusters)} UpperWick / "
         f"{len(volume_clusters)} Volume / "
         f"{len(new_up_records)} Up-Records / "
         f"{len(new_down_records)} Down-Records / "
