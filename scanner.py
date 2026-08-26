@@ -379,7 +379,7 @@ def main():
         f"✅ {len(lower_wick_clusters)} Long Bottom Wick",
         f"❌ {len(upper_wick_clusters)} Long Upper Wick",
         f"📊 {len(volume_clusters)} Volume",
-        f"🚀 {len(new_up_records)} New Up Records",
+        f"📈 {len(new_up_records)} New Up Records",
         f"📉 {len(new_down_records)} New Down Records",
         f"⚡ {len(volatility_hits)} Volatility Z-Score",
         "",
@@ -418,7 +418,7 @@ def main():
 
     if new_up_records:
         details.append(
-            f"🚀 NEW {RECORD_LOOKBACK_PERIOD} HIGH DAY % UP RECORDS ({len(new_up_records)} tickers):"
+            f"📈 NEW {RECORD_LOOKBACK_PERIOD} HIGH DAY % UP RECORDS ({len(new_up_records)} tickers):"
         )
         for t, info in sorted(new_up_records.items(), key=lambda x: -x[1]["today_pct"]):
             details.append(
