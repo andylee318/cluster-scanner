@@ -18,6 +18,10 @@ Also flags individual tickers (not clustered by industry) whose daily-range
 Z-score (vs its own 20-day mean/stdev) is >= 2 today — a Volatility pickup
 signal, same formula as the Streamlit dashboard's Volatility screen.
 
+Industries that appear in MORE THAN ONE cluster type (e.g. an industry that
+clusters on both Engulfing and Volume the same day) are underlined in the
+Telegram message to call out the overlap.
+
 Intended to be run on a schedule (every 30 min during market hours) by
 GitHub Actions. Safe to also run manually / locally for testing.
 """
@@ -25,10 +29,12 @@ GitHub Actions. Safe to also run manually / locally for testing.
 import os
 import sys
 import json
+import html
 import datetime
-import requests
+from collections import Counter
 from zoneinfo import ZoneInfo
 
+import requests
 import pandas as pd
 import numpy as np
 import yfinance as yf
@@ -214,6 +220,17 @@ def build_industry_clusters(hits_set, min_count):
     return clusters
 
 
+def find_multi_cluster_industries(*cluster_dicts):
+    """Returns the set of industry names that appear in MORE THAN ONE of the
+    given cluster dicts (e.g. an industry that clusters on both Engulfing
+    and Volume the same day)."""
+    counts = Counter()
+    for d in cluster_dicts:
+        for industry in d.keys():
+            counts[industry] += 1
+    return {industry for industry, c in counts.items() if c > 1}
+
+
 def find_record_breakers(record_dfs):
     """
     For each ticker, compute its daily close-to-close % change history over
@@ -286,11 +303,29 @@ def save_state(state):
 # ------------------------------------------------------------------------
 # TELEGRAM
 # ------------------------------------------------------------------------
+def esc(value) -> str:
+    """HTML-escape a value for safe use inside a Telegram HTML-mode message."""
+    return html.escape(str(value))
+
+
+def industry_label(industry: str, multi_cluster_industries: set) -> str:
+    """Industry name, HTML-escaped, underlined if it appears in more than
+    one cluster type today."""
+    name = esc(industry)
+    if industry in multi_cluster_industries:
+        return f"<u>{name}</u>"
+    return name
+
+
 def send_telegram(text: str):
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     resp = requests.post(
         url,
-        data={"chat_id": TELEGRAM_CHAT_ID, "text": text},
+        data={
+            "chat_id": TELEGRAM_CHAT_ID,
+            "text": text,
+            "parse_mode": "HTML",
+        },
         timeout=15,
     )
     resp.raise_for_status()
@@ -334,6 +369,16 @@ def main():
     upper_wick_clusters = build_industry_clusters(upper_wick_hits, UPPER_WICK_MIN_PER_INDUSTRY)
     lower_wick_clusters = build_industry_clusters(lower_wick_hits, LOWER_WICK_MIN_PER_INDUSTRY)
     volume_clusters = build_industry_clusters(volume_hits, VOLUME_MIN_PER_INDUSTRY)
+
+    # Industries that show up in more than one cluster type today get
+    # underlined in the Telegram message.
+    multi_cluster_industries = find_multi_cluster_industries(
+        engulf_clusters,
+        botak_clusters,
+        upper_wick_clusters,
+        lower_wick_clusters,
+        volume_clusters,
+    )
 
     new_up_records, new_down_records = find_record_breakers(record_dfs)
     volatility_hits = find_volatility_hits(ext_dfs)
@@ -389,31 +434,36 @@ def main():
     if engulf_clusters:
         details.append(f"🔄 ENGULFING ({len(engulf_clusters)} industries):")
         for ind, tickers in sorted(engulf_clusters.items()):
-            details.append(f"  {ind}: {', '.join(tickers)}")
+            label = industry_label(ind, multi_cluster_industries)
+            details.append(f"  {label}: {esc(', '.join(tickers))}")
         details.append("")
 
     if botak_clusters:
         details.append(f"🧑‍🦲 BOTAK ({len(botak_clusters)} industries):")
         for ind, tickers in sorted(botak_clusters.items()):
-            details.append(f"  {ind} = {', '.join(tickers)}")
+            label = industry_label(ind, multi_cluster_industries)
+            details.append(f"  {label} = {esc(', '.join(tickers))}")
         details.append("")
 
     if lower_wick_clusters:
         details.append(f"✅ LONG BOTTOM WICK ({len(lower_wick_clusters)} industries):")
         for ind, tickers in sorted(lower_wick_clusters.items()):
-            details.append(f"  {ind}: {', '.join(tickers)}")
+            label = industry_label(ind, multi_cluster_industries)
+            details.append(f"  {label}: {esc(', '.join(tickers))}")
         details.append("")
 
     if upper_wick_clusters:
         details.append(f"❌ LONG UPPER WICK ({len(upper_wick_clusters)} industries):")
         for ind, tickers in sorted(upper_wick_clusters.items()):
-            details.append(f"  {ind}: {', '.join(tickers)}")
+            label = industry_label(ind, multi_cluster_industries)
+            details.append(f"  {label}: {esc(', '.join(tickers))}")
         details.append("")
 
     if volume_clusters:
         details.append(f"📊 VOLUME ({len(volume_clusters)} industries):")
         for ind, tickers in sorted(volume_clusters.items()):
-            details.append(f"  {ind}: {', '.join(tickers)}")
+            label = industry_label(ind, multi_cluster_industries)
+            details.append(f"  {label}: {esc(', '.join(tickers))}")
         details.append("")
 
     if new_up_records:
@@ -422,7 +472,7 @@ def main():
         )
         for t, info in sorted(new_up_records.items(), key=lambda x: -x[1]["today_pct"]):
             details.append(
-                f"  {t}: today +{info['today_pct']:.2f}% "
+                f"  {esc(t)}: today +{info['today_pct']:.2f}% "
                 f"(prior record +{info['prior_record_pct']:.2f}%)"
             )
         details.append("")
@@ -433,7 +483,7 @@ def main():
         )
         for t, info in sorted(new_down_records.items(), key=lambda x: x[1]["today_pct"]):
             details.append(
-                f"  {t}: today {info['today_pct']:.2f}% "
+                f"  {esc(t)}: today {info['today_pct']:.2f}% "
                 f"(prior record {info['prior_record_pct']:.2f}%)"
             )
         details.append("")
@@ -445,7 +495,7 @@ def main():
         for t, info in sorted(volatility_hits.items(), key=lambda x: -x[1]["z"]):
             sign = "+" if info["pct"] >= 0 else ""
             details.append(
-                f"  {t}: z={info['z']:.2f} ({sign}{info['pct']:.2f}%)"
+                f"  {esc(t)}: z={info['z']:.2f} ({sign}{info['pct']:.2f}%)"
             )
 
     subject = (
