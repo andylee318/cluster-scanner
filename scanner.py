@@ -419,7 +419,7 @@ def main():
 
     # build a short count header ("is" style) and include the detailed blocks below
     summary = [
-        f"🔄 {len(engulf_clusters)} Engulfing",
+        f"🐳 {len(engulf_clusters)} Engulfing",
         f"🧑‍🦲 {len(botak_clusters)} Botak",
         f"✅ {len(lower_wick_clusters)} Long Bottom Wick",
         f"❌ {len(upper_wick_clusters)} Long Upper Wick",
@@ -432,7 +432,7 @@ def main():
 
     details = []
     if engulf_clusters:
-        details.append(f"🔄 ENGULFING ({len(engulf_clusters)} industries):")
+        details.append(f"🐳 ENGULFING ({len(engulf_clusters)} industries):")
         for ind, tickers in sorted(engulf_clusters.items()):
             label = industry_label(ind, multi_cluster_industries)
             details.append(f"  {label}: {esc(', '.join(tickers))}")
