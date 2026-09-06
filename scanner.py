@@ -1,5 +1,5 @@
 """
-Cluster Scanner — Botak, Engulfing, Wick, Volume, Volatility + Record Breakers
+Cluster Scanner — Botak, Engulfing, Wick, Volume, Volatility, 52W ATH + Record Breakers
 Scans KNOWN_STOCKS for today's bar matching several intraday patterns,
 groups hits by industry (where applicable), and sends a Telegram alert if
 any industry has enough same-day hits to count as a cluster (mirrors the
@@ -9,6 +9,7 @@ thresholds used in the Streamlit dashboard):
     - Long Upper Wick:  > 2 tickers per industry  (>= 3)
     - Long Bottom Wick: > 2 tickers per industry  (>= 3)
     - Volume Cluster:   >= 3 tickers per industry (volume above 50D avg + up day)
+    - 52W ATH:          >= 2 tickers per industry (closing price is a new 52-week high)
 
 Also scans every ticker's own daily close-to-close % change history over
 RECORD_LOOKBACK_PERIOD and flags any ticker where TODAY's % move is a new
@@ -17,6 +18,11 @@ all-time high (within that window) single-day % up-move or % down-move.
 Also flags individual tickers (not clustered by industry) whose daily-range
 Z-score (vs its own 20-day mean/stdev) is >= 2 today — a Volatility pickup
 signal, same formula as the Streamlit dashboard's Volatility screen.
+
+Also flags industry clusters where at least 2 tickers CLOSED at a new
+52-week high (based on Close price, not the candle's intraday High). This
+reuses the same 1y history already downloaded for the record-breaker check
+(RECORD_LOOKBACK_PERIOD / record_dfs) — no extra download required.
 
 Industries that appear in MORE THAN ONE cluster type (e.g. an industry that
 clusters on both Engulfing and Volume the same day) are underlined in the
@@ -54,11 +60,13 @@ STATE_FILE = "cluster_state.json"
 #   botak_industry_count  > 2   -> at least 3 tickers
 #   upper/lower wick count > 2  -> at least 3 tickers
 #   volume cluster: qualifying_tickers >= 3
+#   52w ATH cluster: qualifying_tickers >= 2
 ENGULF_MIN_PER_INDUSTRY = 2
 BOTAK_MIN_PER_INDUSTRY = 3
 UPPER_WICK_MIN_PER_INDUSTRY = 3
 LOWER_WICK_MIN_PER_INDUSTRY = 3
 VOLUME_MIN_PER_INDUSTRY = 3
+ATH_MIN_PER_INDUSTRY = 2
 
 # Volatility Z-score threshold (daily range vs its own 20-day mean/stdev)
 VOLATILITY_Z_THRESHOLD = 2.0
@@ -66,6 +74,8 @@ VOLATILITY_Z_THRESHOLD = 2.0
 # How far back to look when establishing each ticker's own record for the
 # single-day highest % up-move and highest % down-move. Adjust as needed
 # (e.g. "6mo", "2y", "5y") — longer = harder record to break, more meaningful.
+# NOTE: this same "1y" window (record_dfs) is also reused as the 52-week
+# lookback window for the 52W ATH cluster below.
 RECORD_LOOKBACK_PERIOD = "1y"
 
 # How far back to look for Volume (50D avg) and Volatility (20D range Z-score)
@@ -182,6 +192,19 @@ def detect_volume_cluster_today(df: pd.DataFrame) -> bool:
     return bool(is_vol_above and is_price_up)
 
 
+def detect_52w_ath_today(df: pd.DataFrame) -> bool:
+    """True if TODAY's Close is a new 52-week high closing price, i.e. it
+    is the highest Close within the lookback window (df is expected to be
+    the ~1y record_dfs history). Uses Close, NOT the candle's intraday High.
+    Requires some minimum history so a ticker with only a couple of days
+    of data doesn't trivially "make a new high"."""
+    close = df["Close"].dropna()
+    if len(close) < 20 or close.iloc[-1] <= 20:
+        return False
+    today_close = close.iloc[-1]
+    return bool(today_close >= close.max())
+
+
 def compute_volatility_hit(df: pd.DataFrame):
     """Daily-range Z-score (vs its own 20-day mean/stdev) — same formula as
     the Streamlit Volatility screen. Returns (z_score, pct_chg) if today's
@@ -282,6 +305,13 @@ def find_volatility_hits(ext_dfs):
     return hits
 
 
+def find_52w_ath_hits(record_dfs):
+    """Returns the set of tickers whose Close today is a new 52-week high
+    closing price, using the same 1y history downloaded for record_dfs
+    (no separate download)."""
+    return {t for t, df in record_dfs.items() if detect_52w_ath_today(df)}
+
+
 # ------------------------------------------------------------------------
 # STATE (avoid re-emailing the exact same result set every 30 min)
 # ------------------------------------------------------------------------
@@ -363,12 +393,15 @@ def main():
     upper_wick_hits = {t for t, df in dfs.items() if detect_long_upper_wick_today(df)}
     lower_wick_hits = {t for t, df in dfs.items() if detect_long_lower_wick_today(df)}
     volume_hits = {t for t, df in ext_dfs.items() if detect_volume_cluster_today(df)}
+    # Reuses record_dfs (already downloaded above) — no extra download.
+    ath_hits = find_52w_ath_hits(record_dfs)
 
     botak_clusters = build_industry_clusters(botak_hits, BOTAK_MIN_PER_INDUSTRY)
     engulf_clusters = build_industry_clusters(engulf_hits, ENGULF_MIN_PER_INDUSTRY)
     upper_wick_clusters = build_industry_clusters(upper_wick_hits, UPPER_WICK_MIN_PER_INDUSTRY)
     lower_wick_clusters = build_industry_clusters(lower_wick_hits, LOWER_WICK_MIN_PER_INDUSTRY)
     volume_clusters = build_industry_clusters(volume_hits, VOLUME_MIN_PER_INDUSTRY)
+    ath_clusters = build_industry_clusters(ath_hits, ATH_MIN_PER_INDUSTRY)
 
     # Industries that show up in more than one cluster type today get
     # underlined in the Telegram message.
@@ -378,6 +411,7 @@ def main():
         upper_wick_clusters,
         lower_wick_clusters,
         volume_clusters,
+        ath_clusters,
     )
 
     new_up_records, new_down_records = find_record_breakers(record_dfs)
@@ -392,6 +426,7 @@ def main():
         and not new_up_records
         and not new_down_records
         and not volatility_hits
+        and not ath_clusters
     ):
         print("No clusters or record breakers found this run.")
         return
@@ -408,6 +443,7 @@ def main():
             "up_records": sorted(new_up_records.keys()),
             "down_records": sorted(new_down_records.keys()),
             "volatility": sorted(volatility_hits.keys()),
+            "ath": ath_clusters,
         },
         sort_keys=True,
     )
@@ -427,6 +463,7 @@ def main():
         f"📈 {len(new_up_records)} New Up Records",
         f"📉 {len(new_down_records)} New Down Records",
         f"⚡ {len(volatility_hits)} Volatility Z-Score",
+        f"🏔️ {len(ath_clusters)} 52W ATH",
         "",
     ]
 
@@ -497,6 +534,13 @@ def main():
             details.append(
                 f"  {esc(t)}: z={info['z']:.2f} ({sign}{info['pct']:.2f}%)"
             )
+        details.append("")
+
+    if ath_clusters:
+        details.append(f"🏔️ 52W ATH ({len(ath_clusters)} industries):")
+        for ind, tickers in sorted(ath_clusters.items()):
+            label = industry_label(ind, multi_cluster_industries)
+            details.append(f"  {label}: {esc(', '.join(tickers))}")
 
     subject = (
         f"Cluster Alert: {len(engulf_clusters)} Engulfing / "
@@ -506,7 +550,8 @@ def main():
         f"{len(volume_clusters)} Volume / "
         f"{len(new_up_records)} Up-Records / "
         f"{len(new_down_records)} Down-Records / "
-        f"{len(volatility_hits)} Volatility"
+        f"{len(volatility_hits)} Volatility / "
+        f"{len(ath_clusters)} 52W-ATH"
     )
 
     # compose the Telegram message
