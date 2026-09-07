@@ -92,7 +92,7 @@ VOLATILITY_Z_THRESHOLD = 2.0
 # Minimum gap size (%) between yesterday's high and today's low for a
 # bullish gap-up to be reported. 0 = report every gap, no matter how small.
 # Bump this up (e.g. 1.0, 2.0) if the list gets noisy.
-GAP_MIN_PCT = 2.0
+GAP_MIN_PCT = 1.0
 
 # How far back to look when establishing each ticker's own record for the
 # single-day highest % up-move and highest % down-move. Adjust as needed
