@@ -1,5 +1,6 @@
 """
-Cluster Scanner — Botak, Engulfing, Wick, Volume, Volatility, 52W ATH + Record Breakers
+Cluster Scanner — Botak, Engulfing, Wick, Volume, Volatility, 52W ATH,
+Record Breakers + Unfilled Gap Ups
 Scans KNOWN_STOCKS for today's bar matching several intraday patterns,
 groups hits by industry (where applicable), and sends a Telegram alert if
 any industry has enough same-day hits to count as a cluster (mirrors the
@@ -19,10 +20,25 @@ Also flags individual tickers (not clustered by industry) whose daily-range
 Z-score (vs its own 20-day mean/stdev) is >= 2 today — a Volatility pickup
 signal, same formula as the Streamlit dashboard's Volatility screen.
 
+Also flags individual tickers (not clustered by industry, and computed
+completely independently of the Volatility Z-Score signal above) whose most
+recent bullish gap-up has not yet been filled. A bullish gap-up is:
+
+    Older candle high:     100
+                            ↑ GAP ↑
+    Newer candle low:      102
+
+Since 102 > 100, there is a bullish gap between 100 and 102. The gap counts
+as "unfilled" as long as price has not traded back down into it — i.e. no
+Low from the gap day through today has dropped to/below 100. For each
+ticker we walk backwards from today looking for the most recent such gap
+that is still open.
+
 Also flags industry clusters where at least 2 tickers CLOSED at a new
 52-week high (based on Close price, not the candle's intraday High). This
 reuses the same 1y history already downloaded for the record-breaker check
-(RECORD_LOOKBACK_PERIOD / record_dfs) — no extra download required.
+(RECORD_LOOKBACK_PERIOD / record_dfs) — no extra download required. The
+gap-up scan below reuses that same record_dfs history too.
 
 Industries that appear in MORE THAN ONE cluster type (e.g. an industry that
 clusters on both Engulfing and Volume the same day) are underlined in the
@@ -71,11 +87,17 @@ ATH_MIN_PER_INDUSTRY = 2
 # Volatility Z-score threshold (daily range vs its own 20-day mean/stdev)
 VOLATILITY_Z_THRESHOLD = 2.0
 
+# Minimum gap size (%) between the older candle's high and the newer
+# candle's low for a bullish gap-up to be reported. 0 = report every gap,
+# no matter how small. Bump this up (e.g. 1.0, 2.0) if the list gets noisy.
+GAP_MIN_PCT = 0.0
+
 # How far back to look when establishing each ticker's own record for the
 # single-day highest % up-move and highest % down-move. Adjust as needed
 # (e.g. "6mo", "2y", "5y") — longer = harder record to break, more meaningful.
 # NOTE: this same "1y" window (record_dfs) is also reused as the 52-week
-# lookback window for the 52W ATH cluster below.
+# lookback window for the 52W ATH cluster, and as the lookback window for
+# the unfilled-gap-up scan below.
 RECORD_LOOKBACK_PERIOD = "1y"
 
 # How far back to look for Volume (50D avg) and Volatility (20D range Z-score)
@@ -234,6 +256,62 @@ def compute_volatility_hit(df: pd.DataFrame):
     return round(float(z_today), 2), round(float(pct_chg), 2)
 
 
+def find_latest_unfilled_gap_up(df: pd.DataFrame):
+    """Walk backwards from today looking for the most recent bullish gap-up
+    that has NOT been filled yet.
+
+    A bullish gap-up between consecutive candles i-1 (older) and i (newer)
+    exists when:
+
+        Older candle high:     100
+                                ↑ GAP ↑
+        Newer candle low:      102
+
+    i.e. Low[i] > High[i-1]. The gap's range is [High[i-1], Low[i]].
+
+    The gap counts as "unfilled" as long as no candle from day i onward
+    (inclusive of the gap day itself, through today) has traded its Low
+    back down to/below High[i-1] (the bottom of the gap).
+
+    If the most recently formed gap-up has already been filled, this keeps
+    walking further back in history looking for an older gap that is still
+    open. Returns None if no unfilled gap-up is found, otherwise a dict
+    with the gap's details.
+    """
+    high = df["High"]
+    low = df["Low"]
+    close = df["Close"]
+    n = len(df)
+    if n < 2 or close.iloc[-1] <= 20:
+        return None
+
+    for i in range(n - 1, 0, -1):
+        older_high = high.iloc[i - 1]
+        newer_low = low.iloc[i]
+        if newer_low <= older_high:
+            continue  # no gap between this pair, keep walking back
+
+        gap_low = float(older_high)
+        gap_high = float(newer_low)
+        gap_pct = (gap_high - gap_low) / gap_low * 100 if gap_low else 0.0
+        if gap_pct < GAP_MIN_PCT:
+            continue  # gap too small to bother reporting, keep walking back
+
+        filled = bool((low.iloc[i:] <= gap_low).any())
+        if filled:
+            continue  # this gap has since been closed, keep looking further back
+
+        return {
+            "gap_date": df.index[i],
+            "gap_low": gap_low,
+            "gap_high": gap_high,
+            "gap_pct": round(float(gap_pct), 2),
+            "last_close": float(close.iloc[-1]),
+        }
+
+    return None
+
+
 def build_industry_clusters(hits_set, min_count):
     clusters = {}
     for industry, tickers in INDUSTRIES.items():
@@ -310,6 +388,20 @@ def find_52w_ath_hits(record_dfs):
     closing price, using the same 1y history downloaded for record_dfs
     (no separate download)."""
     return {t for t, df in record_dfs.items() if detect_52w_ath_today(df)}
+
+
+def find_gap_up_hits(record_dfs):
+    """Returns dict {ticker: {gap_date, gap_low, gap_high, gap_pct,
+    last_close}} for every ticker whose most recent bullish gap-up (within
+    the record_dfs history) is still unfilled. Reuses the same 1y history
+    downloaded for the record-breaker / 52W ATH checks — no extra download.
+    Computed completely independently of the Volatility Z-Score signal."""
+    hits = {}
+    for t, df in record_dfs.items():
+        result = find_latest_unfilled_gap_up(df)
+        if result is not None:
+            hits[t] = result
+    return hits
 
 
 # ------------------------------------------------------------------------
@@ -416,6 +508,8 @@ def main():
 
     new_up_records, new_down_records = find_record_breakers(record_dfs)
     volatility_hits = find_volatility_hits(ext_dfs)
+    # Independent of volatility_hits — reuses record_dfs, no extra download.
+    gap_up_hits = find_gap_up_hits(record_dfs)
 
     if (
         not botak_clusters
@@ -427,6 +521,7 @@ def main():
         and not new_down_records
         and not volatility_hits
         and not ath_clusters
+        and not gap_up_hits
     ):
         print("No clusters or record breakers found this run.")
         return
@@ -444,6 +539,7 @@ def main():
             "down_records": sorted(new_down_records.keys()),
             "volatility": sorted(volatility_hits.keys()),
             "ath": ath_clusters,
+            "gap_ups": sorted(gap_up_hits.keys()),
         },
         sort_keys=True,
     )
@@ -463,6 +559,7 @@ def main():
         f"📈 {len(new_up_records)} New Up Records",
         f"📉 {len(new_down_records)} New Down Records",
         f"⚡ {len(volatility_hits)} Volatility Z-Score",
+        f"🕳️ {len(gap_up_hits)} Unfilled Gap Ups",
         f"🏔️ {len(ath_clusters)} 52W ATH",
         "",
     ]
@@ -536,6 +633,19 @@ def main():
             )
         details.append("")
 
+    # Unfilled Gap Ups — placed right after Volatility Z-Score, computed
+    # completely independently of it.
+    if gap_up_hits:
+        details.append(f"🕳️ UNFILLED GAP UPS ({len(gap_up_hits)} tickers):")
+        for t, info in sorted(gap_up_hits.items(), key=lambda x: -x[1]["gap_pct"]):
+            gap_date = info["gap_date"]
+            date_str = gap_date.strftime("%Y-%m-%d") if hasattr(gap_date, "strftime") else str(gap_date)
+            details.append(
+                f"  {esc(t)}: {info['gap_low']:.2f} → {info['gap_high']:.2f} "
+                f"(+{info['gap_pct']:.2f}%) on {esc(date_str)}, last close {info['last_close']:.2f}"
+            )
+        details.append("")
+
     if ath_clusters:
         details.append(f"🏔️ 52W ATH ({len(ath_clusters)} industries):")
         for ind, tickers in sorted(ath_clusters.items()):
@@ -551,6 +661,7 @@ def main():
         f"{len(new_up_records)} Up-Records / "
         f"{len(new_down_records)} Down-Records / "
         f"{len(volatility_hits)} Volatility / "
+        f"{len(gap_up_hits)} Gap-Ups / "
         f"{len(ath_clusters)} 52W-ATH"
     )
 
