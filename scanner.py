@@ -44,6 +44,10 @@ Industries that appear in MORE THAN ONE cluster type (e.g. an industry that
 clusters on both Engulfing and Volume the same day) are underlined in the
 Telegram message to call out the overlap.
 
+At the very bottom of the Telegram message, every ticker that appeared in
+any of the sections above is listed once, in the order it was displayed,
+separated by commas.
+
 Intended to be run on a schedule (every 30 min during market hours) by
 GitHub Actions. Safe to also run manually / locally for testing.
 """
@@ -552,11 +556,24 @@ def main():
     ]
 
     details = []
+
+    # Every ticker printed in the sections below, in display order, once.
+    displayed_tickers = []
+    seen_tickers = set()
+
+    def record_displayed(tickers):
+        """Remember tickers in the exact order they appear in the message."""
+        for t in tickers:
+            if t not in seen_tickers:
+                seen_tickers.add(t)
+                displayed_tickers.append(t)
+
     if engulf_clusters:
         details.append(f"🐳 ENGULFING ({len(engulf_clusters)} industries):")
         for ind, tickers in sorted(engulf_clusters.items()):
             label = industry_label(ind, multi_cluster_industries)
             details.append(f"  {label}: {esc(', '.join(tickers))}")
+            record_displayed(tickers)
         details.append("")
 
     if botak_clusters:
@@ -564,6 +581,7 @@ def main():
         for ind, tickers in sorted(botak_clusters.items()):
             label = industry_label(ind, multi_cluster_industries)
             details.append(f"  {label} = {esc(', '.join(tickers))}")
+            record_displayed(tickers)
         details.append("")
 
     if lower_wick_clusters:
@@ -571,6 +589,7 @@ def main():
         for ind, tickers in sorted(lower_wick_clusters.items()):
             label = industry_label(ind, multi_cluster_industries)
             details.append(f"  {label}: {esc(', '.join(tickers))}")
+            record_displayed(tickers)
         details.append("")
 
     if upper_wick_clusters:
@@ -578,6 +597,7 @@ def main():
         for ind, tickers in sorted(upper_wick_clusters.items()):
             label = industry_label(ind, multi_cluster_industries)
             details.append(f"  {label}: {esc(', '.join(tickers))}")
+            record_displayed(tickers)
         details.append("")
 
     if volume_clusters:
@@ -585,6 +605,7 @@ def main():
         for ind, tickers in sorted(volume_clusters.items()):
             label = industry_label(ind, multi_cluster_industries)
             details.append(f"  {label}: {esc(', '.join(tickers))}")
+            record_displayed(tickers)
         details.append("")
 
     if new_up_records:
@@ -596,6 +617,7 @@ def main():
                 f"  {esc(t)}: today +{info['today_pct']:.2f}% "
                 f"(prior record +{info['prior_record_pct']:.2f}%)"
             )
+            record_displayed([t])
         details.append("")
 
     if new_down_records:
@@ -607,6 +629,7 @@ def main():
                 f"  {esc(t)}: today {info['today_pct']:.2f}% "
                 f"(prior record {info['prior_record_pct']:.2f}%)"
             )
+            record_displayed([t])
         details.append("")
 
     if volatility_hits:
@@ -618,6 +641,7 @@ def main():
             details.append(
                 f"  {esc(t)}: z={info['z']:.2f} ({sign}{info['pct']:.2f}%)"
             )
+            record_displayed([t])
         details.append("")
 
     # Unfilled Gap Up — now clustered by industry, same style as
@@ -630,6 +654,7 @@ def main():
                 f"{esc(t)} (+{gap_up_hits[t]['gap_pct']:.2f}%)" for t in tickers
             ]
             details.append(f"  {label}: {', '.join(ticker_strs)}")
+            record_displayed(tickers)
         details.append("")
 
     if ath_clusters:
@@ -637,6 +662,16 @@ def main():
         for ind, tickers in sorted(ath_clusters.items()):
             label = industry_label(ind, multi_cluster_industries)
             details.append(f"  {label}: {esc(', '.join(tickers))}")
+            record_displayed(tickers)
+
+    # Bottom-of-message ticker roll-up: every ticker shown above, once,
+    # in display order, comma separated.
+    footer = []
+    if displayed_tickers:
+        footer.append("")
+        footer.append("————————————")
+        footer.append(f"🧾 ALL TICKERS ({len(displayed_tickers)}):")
+        footer.append(esc(", ".join(displayed_tickers)))
 
     subject = (
         f"Cluster Alert: {len(engulf_clusters)} Engulfing / "
@@ -652,7 +687,7 @@ def main():
     )
 
     # compose the Telegram message
-    body = "\n".join(summary + details)
+    body = "\n".join(summary + details + footer)
 
     send_telegram(body)
     print("Telegram message sent:", subject)
