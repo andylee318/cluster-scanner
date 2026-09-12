@@ -5,7 +5,7 @@ on:
     # Every 30 minutes, hours 13:00–21:30 UTC, Mon–Fri.
     # 13:00–21:30 UTC covers 9:00am–5:30pm ET across both EDT and EST,
     # so the market-hours check inside scanner.py handles the exact cutoff.
-    - cron: "*/30 13-21 * * 1-5"
+    - cron: "*/30 9-17 * * 1-5"
   workflow_dispatch: {}   # lets you trigger a manual test run from the Actions tab
 
 permissions:
