@@ -44,8 +44,8 @@ Industries that appear in MORE THAN ONE cluster type (e.g. an industry that
 clusters on both Engulfing and Volume the same day) are underlined in the
 Telegram message to call out the overlap.
 
-At the very bottom of the Telegram message, every ticker that appeared in
-any of the sections above is listed once, in the order it was displayed,
+At the very top of the Telegram message, every ticker that appeared in
+any of the sections below is listed once, in the order it was displayed,
 separated by commas.
 
 Intended to be run on a schedule (every 30 min during market hours) by
@@ -664,14 +664,14 @@ def main():
             details.append(f"  {label}: {esc(', '.join(tickers))}")
             record_displayed(tickers)
 
-    # Bottom-of-message ticker roll-up: every ticker shown above, once,
+    # Top-of-message ticker roll-up: every ticker shown below, once,
     # in display order, comma separated.
-    footer = []
+    header = []
     if displayed_tickers:
-        footer.append("")
-        footer.append("————————————")
-        footer.append(f"🧾 ALL TICKERS ({len(displayed_tickers)}):")
-        footer.append(esc(", ".join(displayed_tickers)))
+        header.append(f"🧾 ALL TICKERS ({len(displayed_tickers)}):")
+        header.append(esc(", ".join(displayed_tickers)))
+        header.append("————————————")
+        header.append("")
 
     subject = (
         f"Cluster Alert: {len(engulf_clusters)} Engulfing / "
@@ -687,7 +687,7 @@ def main():
     )
 
     # compose the Telegram message
-    body = "\n".join(summary + details + footer)
+    body = "\n".join(header + summary + details)
 
     send_telegram(body)
     print("Telegram message sent:", subject)
