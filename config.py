@@ -209,3 +209,16 @@ KNOWN_STOCKS = [
 ]
 
 KNOWN_STOCKS = list(set(KNOWN_STOCKS))
+
+# Volume: time-of-day adjusted RVOL
+VOLUME_RVOL_CLUSTER = 0.8   # loose: on pace for >= 80% of a normal day -> counts toward cluster
+VOLUME_RVOL_HIGH = 2.0      # strict: on pace for >= 2x a normal day -> flagged individually
+VOLUME_MIN_PRICE_CHG = 0.0  # % up vs prior close (set e.g. 0.5 to be pickier)
+
+# Typical US intraday cumulative-volume curve (minutes since 9:30 -> fraction of day's volume).
+# U-shaped: ~12% done by 10:00, ~21% by 10:30. Tune these if you want.
+VOLUME_PROFILE = [
+    (0, 0.0), (15, 0.07), (30, 0.12), (60, 0.21), (90, 0.28),
+    (120, 0.34), (180, 0.45), (240, 0.55), (300, 0.67),
+    (360, 0.80), (390, 1.0),
+]
