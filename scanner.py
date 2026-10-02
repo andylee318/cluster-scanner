@@ -111,6 +111,11 @@ EXTENDED_LOOKBACK_PERIOD = "4mo"
 
 MARKET_TZ = ZoneInfo("America/New_York")
 
+# Volume: % of the 50D avg daily volume that must already have traded,
+# depending on how far into the session the run is.
+VOLUME_PCT_30MIN = 0.20   # runs within ~45 min of the open
+VOLUME_PCT_60MIN = 0.35   # runs within ~90 min of the open
+VOLUME_PCT_LATER = 0.60   # anything later
 
 # ------------------------------------------------------------------------
 # MARKET HOURS GUARD
@@ -196,16 +201,16 @@ def detect_long_lower_wick_today(df: pd.DataFrame) -> bool:
     lower_wick = min(o, c) - l
     return (lower_wick / rng) > 0.5
 
-
 def detect_volume_cluster_today(df: pd.DataFrame) -> bool:
-    """Today's volume above its own 50-day average AND price closed up
-    vs prior day — same condition used by the Streamlit Volume Cluster."""
+    """Today's volume so far is at least X% of the prior 50-day average
+    daily volume (X depends on time since the open) AND price is up vs
+    the prior close."""
     if len(df) < 51:
         return False
     vol = df["Volume"]
     close = df["Close"]
 
-    avg_vol50 = vol.rolling(50).mean().iloc[-1]
+    avg_vol50 = vol.iloc[-51:-1].mean()   # prior 50 days, excludes today's partial bar
     if pd.isna(avg_vol50) or avg_vol50 <= 0:
         return False
 
@@ -214,9 +219,21 @@ def detect_volume_cluster_today(df: pd.DataFrame) -> bool:
     if pd.isna(c_today) or pd.isna(c_prev) or c_prev == 0:
         return False
 
-    is_vol_above = vol.iloc[-1] > avg_vol50
+    now_et = datetime.datetime.now(MARKET_TZ)
+    open_t = now_et.replace(hour=9, minute=30, second=0, microsecond=0)
+    minutes = (now_et - open_t).total_seconds() / 60
+
+    if minutes <= 45:
+        threshold = VOLUME_PCT_30MIN
+    elif minutes <= 90:
+        threshold = VOLUME_PCT_60MIN
+    else:
+        threshold = VOLUME_PCT_LATER
+
+    is_vol_enough = vol.iloc[-1] >= avg_vol50 * threshold
     is_price_up = c_today > c_prev
-    return bool(is_vol_above and is_price_up)
+    return bool(is_vol_enough and is_price_up)
+
 
 
 def detect_52w_ath_today(df: pd.DataFrame) -> bool:
