@@ -564,11 +564,11 @@ def main():
         f"✅ {len(lower_wick_clusters)} Long Bottom Wick",
         f"❌ {len(upper_wick_clusters)} Long Upper Wick",
         f"📊 {len(volume_clusters)} Volume",
+        f"🕳️ {len(gap_up_clusters)} Unfilled Gap Up",
+        f"🏔️ {len(ath_clusters)} 52W ATH",
         f"📈 {len(new_up_records)} New Up Records",
         f"📉 {len(new_down_records)} New Down Records",
         f"⚡ {len(volatility_hits)} Volatility Z-Score",
-        f"🕳️ {len(gap_up_clusters)} Unfilled Gap Up",
-        f"🏔️ {len(ath_clusters)} 52W ATH",
         "",
     ]
 
@@ -625,6 +625,27 @@ def main():
             record_displayed(tickers)
         details.append("")
 
+    # Unfilled Gap Up — now clustered by industry, same style as
+    # Botak/Engulfing/etc. Each ticker also shows its gap % for context.
+    if gap_up_clusters:
+        details.append(f"🕳️ UNFILLED GAP UP ({len(gap_up_clusters)} industries):")
+        for ind, tickers in sorted(gap_up_clusters.items()):
+            label = industry_label(ind, multi_cluster_industries)
+            ticker_strs = [
+                f"{esc(t)} (+{gap_up_hits[t]['gap_pct']:.2f}%)" for t in tickers
+            ]
+            details.append(f"  {label}: {', '.join(ticker_strs)}")
+            record_displayed(tickers)
+        details.append("")
+
+    if ath_clusters:
+        details.append(f"🏔️ 52W ATH ({len(ath_clusters)} industries):")
+        for ind, tickers in sorted(ath_clusters.items()):
+            label = industry_label(ind, multi_cluster_industries)
+            details.append(f"  {label}: {esc(', '.join(tickers))}")
+            record_displayed(tickers)
+        details.append("")
+
     if new_up_records:
         details.append(
             f"📈 NEW {RECORD_LOOKBACK_PERIOD} HIGH DAY % UP RECORDS ({len(new_up_records)} tickers):"
@@ -661,26 +682,6 @@ def main():
             record_displayed([t])
         details.append("")
 
-    # Unfilled Gap Up — now clustered by industry, same style as
-    # Botak/Engulfing/etc. Each ticker also shows its gap % for context.
-    if gap_up_clusters:
-        details.append(f"🕳️ UNFILLED GAP UP ({len(gap_up_clusters)} industries):")
-        for ind, tickers in sorted(gap_up_clusters.items()):
-            label = industry_label(ind, multi_cluster_industries)
-            ticker_strs = [
-                f"{esc(t)} (+{gap_up_hits[t]['gap_pct']:.2f}%)" for t in tickers
-            ]
-            details.append(f"  {label}: {', '.join(ticker_strs)}")
-            record_displayed(tickers)
-        details.append("")
-
-    if ath_clusters:
-        details.append(f"🏔️ 52W ATH ({len(ath_clusters)} industries):")
-        for ind, tickers in sorted(ath_clusters.items()):
-            label = industry_label(ind, multi_cluster_industries)
-            details.append(f"  {label}: {esc(', '.join(tickers))}")
-            record_displayed(tickers)
-
     # Top-of-message ticker roll-up: every ticker shown below, once,
     # in display order, comma separated.
     header = []
@@ -696,11 +697,11 @@ def main():
         f"{len(lower_wick_clusters)} LowerWick / "
         f"{len(upper_wick_clusters)} UpperWick / "
         f"{len(volume_clusters)} Volume / "
+        f"{len(gap_up_clusters)} Gap-Up / "
+        f"{len(ath_clusters)} 52W-ATH"
         f"{len(new_up_records)} Up-Records / "
         f"{len(new_down_records)} Down-Records / "
         f"{len(volatility_hits)} Volatility / "
-        f"{len(gap_up_clusters)} Gap-Up / "
-        f"{len(ath_clusters)} 52W-ATH"
     )
 
     # compose the Telegram message
