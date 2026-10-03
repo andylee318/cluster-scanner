@@ -30,14 +30,17 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scanner.py
 
-      - name: Persist state (so we don't re-email identical clusters)
+      - name: Persist state and max-move data
         run: |
           git config user.name "cluster-scanner-bot"
           git config user.email "actions@users.noreply.github.com"
-          if [ -f cluster_state.json ]; then
-            git add cluster_state.json
-            git diff --staged --quiet || git commit -m "update cluster state"
-            git push
+          for f in cluster_state.json max_1d_moves_1y.json; do
+            [ -f "$f" ] && git add "$f"
+          done
+          if git diff --staged --quiet; then
+            echo "Nothing changed — nothing to commit."
           else
-            echo "No cluster_state.json produced this run (no cluster found / market closed) — nothing to commit."
+            git commit -m "update cluster state / 1Y max moves"
+            git pull --rebase
+            git push
           fi
