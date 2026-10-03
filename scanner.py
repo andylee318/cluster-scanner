@@ -74,6 +74,7 @@ TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 STATE_FILE = "cluster_state.json"
+MAX_MOVES_FILE = "max_1d_moves_1y.json"  # 1Y max 1-day gain/drop per ticker (from app2.py)
 
 # Thresholds — mirrors the original Streamlit logic:
 #   engulf_industry_count > 1   -> at least 2 tickers
@@ -428,6 +429,85 @@ def save_state(state):
 
 
 # ------------------------------------------------------------------------
+# 1Y MAX 1-DAY MOVE FILE (max_1d_moves_1y.json, produced by app2.py)
+# ------------------------------------------------------------------------
+def update_max_moves_file(record_dfs):
+    """Refreshes MAX_MOVES_FILE from the ~1y history in record_dfs.
+
+    Only COMPLETED daily bars are used (today's bar is dropped while the
+    session is still open / just closed) so a half-finished day can't write a
+    number that later turns out wrong. For each ticker the rolling 365-day
+    max 1-day gain / drop is recomputed, which covers both cases:
+      - a new gain/drop larger than the stored one  -> stored value replaced
+      - the stored gain/drop date fell out of the window -> next best value
+    The file is rewritten only if at least one number or date changed.
+    Tickers that failed to download keep their existing entry.
+    """
+    if not os.path.exists(MAX_MOVES_FILE):
+        print(f"{MAX_MOVES_FILE} not found — skipping 1Y max-move update.")
+        return False
+
+    with open(MAX_MOVES_FILE) as f:
+        data = json.load(f)
+    entries = data.setdefault("tickers", {})
+    window_days = int(data.get("window_days", 365))
+
+    now_et = datetime.datetime.now(MARKET_TZ)
+    today_et = pd.Timestamp(now_et.date())
+    # Treat today's bar as final only after the close (+15 min settle time).
+    today_final = now_et.weekday() < 5 and now_et.hour * 60 + now_et.minute >= 16 * 60 + 15
+
+    changed = []
+    for t, df in record_dfs.items():
+        close = df["Close"].dropna()
+        close.index = pd.to_datetime(close.index).tz_localize(None).normalize()
+        if not today_final:
+            close = close[close.index < today_et]
+        if len(close) < 3:
+            continue
+
+        pct = close.pct_change().dropna() * 100
+        last_date = close.index[-1]
+        win_start = last_date - pd.Timedelta(days=window_days)
+        pct = pct[pct.index > win_start]
+        if pct.empty:
+            continue
+
+        new = {
+            "max_1d_gain_pct": round(float(pct.max()), 2),
+            "gain_date": pct.idxmax().strftime("%Y-%m-%d"),
+            "max_1d_drop_pct": round(float(pct.min()), 2),
+            "drop_date": pct.idxmin().strftime("%Y-%m-%d"),
+            "window_start": (win_start + pd.Timedelta(days=1)).strftime("%Y-%m-%d"),
+            "last_close_date": last_date.strftime("%Y-%m-%d"),
+            "last_close": round(float(close.iloc[-1]), 4),
+        }
+
+        old = entries.get(t)
+        keys = ("max_1d_gain_pct", "gain_date", "max_1d_drop_pct", "drop_date")
+        if old is None or any(old.get(k) != new[k] for k in keys):
+            changed.append(
+                f"{t}: gain {old and old.get('max_1d_gain_pct')} -> {new['max_1d_gain_pct']}, "
+                f"drop {old and old.get('max_1d_drop_pct')} -> {new['max_1d_drop_pct']}"
+            )
+        entries[t] = new  # always refresh last_close / window_start
+
+    if not changed:
+        print("1Y max-move file: no new max gain/drop numbers.")
+        return False
+
+    data["generated_at"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    data["as_of"] = max(e["last_close_date"] for e in entries.values())
+    data["tickers"] = dict(sorted(entries.items()))
+    with open(MAX_MOVES_FILE, "w") as f:
+        json.dump(data, f, indent=2)
+    print(f"1Y max-move file updated ({len(changed)} tickers):")
+    for line in changed:
+        print("  " + line)
+    return True
+
+
+# ------------------------------------------------------------------------
 # TELEGRAM
 # ------------------------------------------------------------------------
 def esc(value) -> str:
@@ -462,16 +542,20 @@ def send_telegram(text: str):
 # MAIN
 # ------------------------------------------------------------------------
 def main():
-    if not is_market_open_now():
-        print("Market closed right now (ET) — skipping.")
-        return
-
     if not INDUSTRIES or not KNOWN_STOCKS:
         print("ERROR: config.py is still empty. Paste your INDUSTRIES dict "
               "and KNOWN_STOCKS list before running.", file=sys.stderr)
         sys.exit(1)
 
     all_tickers = sorted(set(KNOWN_STOCKS))
+
+    if not is_market_open_now():
+        # Outside market hours: skip the Telegram scan, but still refresh the
+        # 1Y max-move file (this is the run that picks up the day's final bar).
+        print("Market closed right now (ET) — skipping scan, updating 1Y max-move file only.")
+        print(f"Downloading {RECORD_LOOKBACK_PERIOD} history for 1Y max-move update...")
+        update_max_moves_file(download_data(all_tickers, period=RECORD_LOOKBACK_PERIOD))
+        return
 
     print(f"Downloading data for {len(all_tickers)} tickers...")
     dfs = download_data(all_tickers, period="5d")
@@ -484,6 +568,9 @@ def main():
     print(f"Downloading {RECORD_LOOKBACK_PERIOD} history for record check...")
     record_dfs = download_data(all_tickers, period=RECORD_LOOKBACK_PERIOD)
     print(f"Got record-lookback data for {len(record_dfs)} tickers.")
+
+    # Keep max_1d_moves_1y.json current (completed bars only).
+    update_max_moves_file(record_dfs)
 
     botak_hits = {t for t, df in dfs.items() if detect_botak_today(df)}
     engulf_hits = {t for t, df in dfs.items() if detect_engulfing_today(df)}
