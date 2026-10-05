@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T14:01:18Z",
+  "generated_at": "2026-10-05T14:02:13Z",
   "window_days": 365,
   "as_of": "2026-10-02",
   "source": "yfinance daily auto-adjusted close",
@@ -248,8 +248,8 @@
       "last_close": 68.65
     },
     "AMD": {
-      "max_1d_gain_pct": 23.71,
-      "gain_date": "2025-10-06",
+      "max_1d_gain_pct": 18.61,
+      "gain_date": "2026-05-06",
       "max_1d_drop_pct": -17.31,
       "drop_date": "2026-02-04",
       "window_start": "2025-10-03",
@@ -572,8 +572,8 @@
       "last_close": 1059.63
     },
     "BLNK": {
-      "max_1d_gain_pct": 25.0,
-      "gain_date": "2025-10-06",
+      "max_1d_gain_pct": 22.53,
+      "gain_date": "2026-01-12",
       "max_1d_drop_pct": -15.49,
       "drop_date": "2025-12-05",
       "window_start": "2025-10-03",
@@ -2941,8 +2941,8 @@
     "PFE": {
       "max_1d_gain_pct": 4.59,
       "gain_date": "2025-11-11",
-      "max_1d_drop_pct": -3.43,
-      "drop_date": "2025-10-06",
+      "max_1d_drop_pct": -3.41,
+      "drop_date": "2025-12-16",
       "window_start": "2025-10-03",
       "last_close_date": "2026-10-02",
       "last_close": 27.8
@@ -3389,8 +3389,8 @@
       "last_close": 25.06
     },
     "SANM": {
-      "max_1d_gain_pct": 22.72,
-      "gain_date": "2025-10-06",
+      "max_1d_gain_pct": 16.56,
+      "gain_date": "2025-11-04",
       "max_1d_drop_pct": -21.56,
       "drop_date": "2026-01-27",
       "window_start": "2025-10-03",
