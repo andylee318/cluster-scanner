@@ -13,7 +13,7 @@ INDUSTRIES = {
     'SPACE': ['SPCX', 'UFO', 'VSAT', 'RKLB', 'SATL', 'RDW', 'LUNR', 'BKSY', 'PL', 'IRDM', 'GSAT', 'ASTS', 'NASA', 'FLY', 'SPCE', 'KRMN', 'SIDU'],
     'CATHIE WOOD': ['ARKG', 'ARKK', 'ARKQ', 'ARKW', 'ARKF', 'ARKX'],
     'CHINA': ['FUTU', 'LI', 'KWEB', 'XPEV', 'NIO', 'PDD', 'BIDU', 'JD', 'BABA'],
-    'DATA CENTER': ['WGMI', 'CRWV', 'NBIS', 'IREN', 'WULF', 'CORZ', 'CIFR', 'HUT', 'BTDR', 'EQIX'],
+    'DATA CENTER': ['NCLD', 'WGMI', 'CRWV', 'NBIS', 'IREN', 'WULF', 'CORZ', 'CIFR', 'HUT', 'BTDR', 'EQIX'],
     'SOLAR': ['TAN', 'SEDG', 'ENPH', 'FSLR', 'ARRY', 'SHLS', 'CSIQ', 'RUN', 'DQ'],
     'COML SVCS-ADVRTSNG': ['OMC', 'DJT', 'TTD', 'MGNI', 'PUBM'],
     'AEROSPACE/DEFENSE': ['SHLD', 'ITA', 'XAR', 'RTX', 'LMT', 'HON', 'BA', 'NOC'],
