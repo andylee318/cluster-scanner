@@ -219,6 +219,8 @@ def detect_volume_cluster_today(df: pd.DataFrame) -> bool:
     c_prev = close.iloc[-2]
     if pd.isna(c_today) or pd.isna(c_prev) or c_prev == 0:
         return False
+    if c_today <= 20:
+        return False
 
     now_et = datetime.datetime.now(MARKET_TZ)
     open_t = now_et.replace(hour=9, minute=30, second=0, microsecond=0)
@@ -354,6 +356,8 @@ def find_record_breakers(record_dfs):
     new_down_records = {}
 
     for t, df in record_dfs.items():
+        if df["Close"].iloc[-1] <= 20:
+            continue
         pct_changes = df["Close"].pct_change().dropna() * 100  # vectorized
         if len(pct_changes) < 2:
             continue  # need at least 1 prior day + today to compare
