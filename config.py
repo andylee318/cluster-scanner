@@ -60,7 +60,7 @@ INDUSTRIES = {
     'ELEC-MISC PRODUCTS': ['OLED', 'LFUS', 'VSH'],
     'WHOLESALE-ELECT': ['SNX', 'ARW', 'AVT', 'REZI', 'GWW', 'FAST', 'FERG', 'GPC', 'POOL', 'AIT', 'WCC', 'MSM', 'UGI'],
     'RETAIL-CNSMR ELEC': ['BBY', 'GME'],
-    'CONSUMER PROD-ELEC': ['SN', 'ROKU', 'WHR', 'SPB', 'SONY'],
+    'CONSUMER PROD-ELEC': ['SN', 'WHR', 'SPB', 'SONY'],
     'BLDG-HEAVY CONSTR': ['PWR', 'IESC', 'EME', 'FIX', 'ACM', 'TTEK', 'MTZ', 'APG', 'FLR', 'DY', 'STRL', 'ROAD', 'GVA', 'PRIM'],
     'BLDG-RSIDNT/COMML': ['ITB', 'IBP', 'EXPO', 'DHI', 'LEN', 'NVR', 'PHM', 'TOL', 'MTH', 'KBH', 'SKY', 'MHO', 'FTDR', 'GRBK', 'DFH', 'CCS', 'LGIH'],
     'BLDG-MBILE/MFG & RV': ['CVCO', 'PATK'],
@@ -209,7 +209,7 @@ KNOWN_STOCKS = [
     'GFS', 'STX', 'A', 'ZBRA', 'ENTG', 'ONTO', 'TRMB', 'BNTX', 'PFE', 'MRNA', 'NVAX', 'FCX', 'CF', 'DRI', 
     'PEP', 'XOM', 'LLY', 'CL', 'MCD', 'KO', 'GE', 'CVX', 'FISV', 'DE', 'WM', 'HLT', 'FUTU', 'UBER', 
     'TIGR', 'EQIX', 'DPZ', 'CSCO', 'COKE', 'SONY', 'FDS', 'MCO', 'GRAB', 'PTON', 'AMT', 'LIT', 'CMG', 'IPO', 
-    'INMD', 'NNDM', 'MP', 'FUBO', 'SPOT', 'ALGN', 'PZZA', 'LOVE', 'LMND', 'POOL', 'PLTR', 'ROKU', 
+    'INMD', 'NNDM', 'MP', 'FUBO', 'SPOT', 'ALGN', 'PZZA', 'LOVE', 'LMND', 'POOL', 'PLTR', 
     'CELH', 'NFLX', 'DHI', 'DELL'
 ]
 
