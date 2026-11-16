@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T15:01:25Z",
+  "generated_at": "2026-11-16T15:02:08Z",
   "window_days": 365,
   "as_of": "2026-11-13",
   "source": "yfinance daily auto-adjusted close",
@@ -2039,8 +2039,8 @@
       "last_close": 28.84
     },
     "JKS": {
-      "max_1d_gain_pct": 13.09,
-      "gain_date": "2025-11-17",
+      "max_1d_gain_pct": 10.85,
+      "gain_date": "2026-04-22",
       "max_1d_drop_pct": -12.44,
       "drop_date": "2026-01-20",
       "window_start": "2025-11-14",
@@ -4408,8 +4408,8 @@
     "XPEV": {
       "max_1d_gain_pct": 8.44,
       "gain_date": "2026-01-12",
-      "max_1d_drop_pct": -10.32,
-      "drop_date": "2025-11-17",
+      "max_1d_drop_pct": -8.53,
+      "drop_date": "2026-08-24",
       "window_start": "2025-11-14",
       "last_close_date": "2026-11-13",
       "last_close": 9.37
