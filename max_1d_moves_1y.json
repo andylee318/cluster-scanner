@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T15:02:08Z",
+  "generated_at": "2026-11-18T15:02:37Z",
   "window_days": 365,
-  "as_of": "2026-11-13",
+  "as_of": "2026-11-17",
   "source": "yfinance daily auto-adjusted close",
   "tickers": {
     "A": {
@@ -9,3150 +9,3150 @@
       "gain_date": "2026-05-28",
       "max_1d_drop_pct": -5.02,
       "drop_date": "2026-04-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 173.96
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 172.22
     },
     "AA": {
       "max_1d_gain_pct": 8.67,
       "gain_date": "2026-01-05",
       "max_1d_drop_pct": -9.47,
       "drop_date": "2026-06-10",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 39.74
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 37.27
     },
     "AAL": {
       "max_1d_gain_pct": 9.17,
       "gain_date": "2026-06-11",
       "max_1d_drop_pct": -8.32,
       "drop_date": "2026-07-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 13.17
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 12.92
     },
     "AAOI": {
       "max_1d_gain_pct": 56.88,
       "gain_date": "2026-02-27",
       "max_1d_drop_pct": -20.89,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 49.89
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 45.22
     },
     "AAPL": {
       "max_1d_gain_pct": 5.31,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -7.35,
       "drop_date": "2026-07-31",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 356.27
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 351.91
     },
     "ABBV": {
       "max_1d_gain_pct": 6.25,
       "gain_date": "2026-06-22",
       "max_1d_drop_pct": -5.2,
       "drop_date": "2026-03-18",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 295.03
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 292.82
     },
     "ABNB": {
       "max_1d_gain_pct": 17.43,
       "gain_date": "2026-08-07",
       "max_1d_drop_pct": -7.56,
       "drop_date": "2026-09-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 186.78
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 180.94
     },
     "ABT": {
       "max_1d_gain_pct": 10.71,
       "gain_date": "2026-07-16",
       "max_1d_drop_pct": -10.04,
       "drop_date": "2026-01-22",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 108.52
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 104.71
     },
     "ACHR": {
       "max_1d_gain_pct": 19.59,
       "gain_date": "2026-07-20",
       "max_1d_drop_pct": -13.17,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 4.03
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 3.52
     },
     "ACLS": {
       "max_1d_gain_pct": 22.41,
       "gain_date": "2026-05-06",
       "max_1d_drop_pct": -18.97,
       "drop_date": "2026-07-02",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 104.42
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 97.98
     },
     "ACN": {
       "max_1d_gain_pct": 15.78,
       "gain_date": "2026-10-01",
       "max_1d_drop_pct": -17.97,
       "drop_date": "2026-06-18",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 250.49
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 239.28
     },
     "ADBE": {
       "max_1d_gain_pct": 7.36,
       "gain_date": "2026-05-29",
       "max_1d_drop_pct": -7.58,
       "drop_date": "2026-03-13",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 243.08
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 235.55
     },
     "ADI": {
       "max_1d_gain_pct": 8.55,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -11.13,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 397.97
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 383.67
     },
     "ADP": {
       "max_1d_gain_pct": 7.98,
       "gain_date": "2026-04-29",
       "max_1d_drop_pct": -5.04,
       "drop_date": "2026-02-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 309.93
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 308.29
     },
     "ADSK": {
       "max_1d_gain_pct": 7.78,
       "gain_date": "2026-09-14",
       "max_1d_drop_pct": -8.26,
       "drop_date": "2026-09-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 264.42
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 255.22
     },
     "AEHR": {
       "max_1d_gain_pct": 27.86,
       "gain_date": "2026-07-21",
       "max_1d_drop_pct": -19.2,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 56.98
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 49.74
     },
     "AEO": {
       "max_1d_gain_pct": 15.07,
       "gain_date": "2025-12-03",
       "max_1d_drop_pct": -13.97,
       "drop_date": "2026-09-10",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 21.71
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 21.18
     },
     "AEP": {
       "max_1d_gain_pct": 3.42,
       "gain_date": "2026-02-12",
       "max_1d_drop_pct": -3.79,
       "drop_date": "2026-08-21",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 129.18
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 125.97
     },
     "AFRM": {
       "max_1d_gain_pct": 11.77,
       "gain_date": "2025-12-16",
       "max_1d_drop_pct": -11.99,
       "drop_date": "2026-02-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 65.11
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 59.44
     },
     "AI": {
       "max_1d_gain_pct": 14.78,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -18.53,
       "drop_date": "2026-02-26",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 11.82
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 9.95
     },
     "AKAM": {
       "max_1d_gain_pct": 26.58,
       "gain_date": "2026-05-08",
       "max_1d_drop_pct": -16.66,
       "drop_date": "2026-04-10",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 85.4
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 84.64
     },
     "ALAB": {
       "max_1d_gain_pct": 20.0,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -21.41,
       "drop_date": "2026-02-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 221.83
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 211.6
     },
     "ALB": {
       "max_1d_gain_pct": 16.31,
       "gain_date": "2026-04-16",
       "max_1d_drop_pct": -9.41,
       "drop_date": "2026-02-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 93.53
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 87.67
     },
     "ALGM": {
       "max_1d_gain_pct": 14.65,
       "gain_date": "2026-06-29",
       "max_1d_drop_pct": -14.24,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 30.13
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 28.23
     },
     "ALGN": {
       "max_1d_gain_pct": 8.88,
       "gain_date": "2026-02-05",
       "max_1d_drop_pct": -6.91,
       "drop_date": "2026-02-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 168.32
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 163.46
     },
     "AMAT": {
       "max_1d_gain_pct": 14.97,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -13.58,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 370.5
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 349.23
     },
     "AMBA": {
       "max_1d_gain_pct": 28.04,
       "gain_date": "2026-06-30",
       "max_1d_drop_pct": -21.41,
       "drop_date": "2026-05-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 60.12
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 53.54
     },
     "AMD": {
       "max_1d_gain_pct": 18.61,
       "gain_date": "2026-05-06",
       "max_1d_drop_pct": -17.31,
       "drop_date": "2026-02-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 534.06
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 503.41
     },
     "AMGN": {
       "max_1d_gain_pct": 8.15,
       "gain_date": "2026-02-04",
       "max_1d_drop_pct": -10.08,
       "drop_date": "2026-09-08",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 465.67
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 457.93
     },
     "AMKR": {
       "max_1d_gain_pct": 12.94,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -24.74,
       "drop_date": "2026-07-28",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 36.11
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 34.05
     },
     "AMPX": {
       "max_1d_gain_pct": 21.5,
       "gain_date": "2026-05-28",
       "max_1d_drop_pct": -27.4,
       "drop_date": "2026-05-07",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 7.93
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 6.77
     },
     "AMT": {
       "max_1d_gain_pct": 9.3,
       "gain_date": "2026-10-09",
       "max_1d_drop_pct": -4.1,
       "drop_date": "2026-08-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 191.64
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 183.18
     },
     "AMZN": {
       "max_1d_gain_pct": 15.32,
       "gain_date": "2026-07-31",
       "max_1d_drop_pct": -5.55,
       "drop_date": "2026-02-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 266.66
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 257.89
     },
     "ANET": {
       "max_1d_gain_pct": 9.0,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -13.61,
       "drop_date": "2026-05-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 197.29
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 186.42
     },
     "ANF": {
       "max_1d_gain_pct": 37.54,
       "gain_date": "2025-11-25",
       "max_1d_drop_pct": -17.69,
       "drop_date": "2026-01-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 148.88
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 142.88
     },
     "APH": {
       "max_1d_gain_pct": 8.2,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -12.2,
       "drop_date": "2026-01-28",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 78.23
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 76.36
     },
     "APO": {
       "max_1d_gain_pct": 8.11,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -8.57,
       "drop_date": "2026-02-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 123.47
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 117.89
     },
     "APP": {
       "max_1d_gain_pct": 31.04,
       "gain_date": "2026-11-05",
       "max_1d_drop_pct": -19.68,
       "drop_date": "2026-02-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 409.1
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 398.94
     },
     "APPS": {
       "max_1d_gain_pct": 38.88,
       "gain_date": "2026-05-27",
       "max_1d_drop_pct": -35.84,
       "drop_date": "2026-11-10",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 7.61
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 7.04
     },
     "ARKF": {
       "max_1d_gain_pct": 5.17,
       "gain_date": "2026-03-31",
       "max_1d_drop_pct": -6.11,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 41.51
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 39.14
     },
     "ARKG": {
       "max_1d_gain_pct": 10.46,
       "gain_date": "2026-08-19",
       "max_1d_drop_pct": -10.2,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 43.2
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 40.5
     },
     "ARKK": {
       "max_1d_gain_pct": 6.41,
       "gain_date": "2026-03-31",
       "max_1d_drop_pct": -8.98,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 74.99
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 70.84
     },
     "ARKQ": {
       "max_1d_gain_pct": 6.16,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -7.76,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 107.9
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 102.28
     },
     "ARKW": {
       "max_1d_gain_pct": 5.51,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -7.71,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 142.555
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 135.01
     },
     "ARKX": {
       "max_1d_gain_pct": 5.67,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -6.48,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 29.22
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 27.69
     },
     "ARM": {
       "max_1d_gain_pct": 17.36,
       "gain_date": "2026-08-04",
       "max_1d_drop_pct": -13.08,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 190.53
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 183.39
     },
     "ASML": {
       "max_1d_gain_pct": 9.53,
       "gain_date": "2026-06-11",
       "max_1d_drop_pct": -9.33,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 1495.16
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 1383.11
     },
     "ASTS": {
       "max_1d_gain_pct": 21.44,
       "gain_date": "2026-06-29",
       "max_1d_drop_pct": -17.04,
       "drop_date": "2026-07-16",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 32.6
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 27.59
     },
     "AVAV": {
       "max_1d_gain_pct": 18.76,
       "gain_date": "2026-06-30",
       "max_1d_drop_pct": -17.42,
       "drop_date": "2026-03-02",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 117.52
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 104.42
     },
     "AVGO": {
       "max_1d_gain_pct": 11.1,
       "gain_date": "2025-11-24",
       "max_1d_drop_pct": -12.59,
       "drop_date": "2026-06-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 347.01
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 341.6
     },
     "AXP": {
       "max_1d_gain_pct": 3.98,
       "gain_date": "2026-06-04",
       "max_1d_drop_pct": -7.88,
       "drop_date": "2026-02-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 320.6
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 315.78
     },
     "AXTI": {
       "max_1d_gain_pct": 29.95,
       "gain_date": "2026-04-16",
       "max_1d_drop_pct": -22.76,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 41.84
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 36.42
     },
     "BA": {
       "max_1d_gain_pct": 10.15,
       "gain_date": "2025-12-02",
       "max_1d_drop_pct": -10.69,
       "drop_date": "2026-10-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 171.5
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 163.91
     },
     "BABA": {
       "max_1d_gain_pct": 11.05,
       "gain_date": "2026-07-08",
       "max_1d_drop_pct": -8.57,
       "drop_date": "2026-08-21",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 94.38
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 86.65
     },
     "BAC": {
       "max_1d_gain_pct": 3.97,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -5.14,
       "drop_date": "2026-09-14",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 51.02
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 49.44
     },
     "BARK": {
       "max_1d_gain_pct": 25.53,
       "gain_date": "2026-01-12",
       "max_1d_drop_pct": -20.29,
       "drop_date": "2026-03-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 9.27
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 9.11
     },
     "BBY": {
       "max_1d_gain_pct": 15.8,
       "gain_date": "2026-05-28",
       "max_1d_drop_pct": -5.3,
       "drop_date": "2026-08-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 104.07
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 98.4
     },
     "BE": {
       "max_1d_gain_pct": 27.21,
       "gain_date": "2026-04-29",
       "max_1d_drop_pct": -18.49,
       "drop_date": "2026-06-26",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 191.99
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 173.46
     },
     "BETZ": {
       "max_1d_gain_pct": 3.46,
       "gain_date": "2026-03-23",
       "max_1d_drop_pct": -4.19,
       "drop_date": "2026-11-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 16.37
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 15.7
     },
     "BIDU": {
       "max_1d_gain_pct": 15.03,
       "gain_date": "2026-01-02",
       "max_1d_drop_pct": -12.73,
       "drop_date": "2026-08-18",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 78.14
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 71.15
     },
     "BITO": {
       "max_1d_gain_pct": 10.11,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -13.3,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 9.15
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 8.49
     },
     "BKNG": {
       "max_1d_gain_pct": 9.83,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -9.32,
       "drop_date": "2026-02-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 159.58
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 154.46
     },
     "BLK": {
       "max_1d_gain_pct": 6.63,
       "gain_date": "2026-07-15",
       "max_1d_drop_pct": -7.17,
       "drop_date": "2026-03-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 1222.91
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 1180.67
     },
     "BLNK": {
       "max_1d_gain_pct": 25.98,
       "gain_date": "2026-11-06",
       "max_1d_drop_pct": -15.49,
       "drop_date": "2025-12-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 0.42
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 0.392
     },
     "BMNR": {
       "max_1d_gain_pct": 19.62,
       "gain_date": "2025-11-24",
       "max_1d_drop_pct": -14.29,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 17.58
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 15.86
     },
     "BNTX": {
       "max_1d_gain_pct": 21.96,
       "gain_date": "2026-08-19",
       "max_1d_drop_pct": -17.88,
       "drop_date": "2026-03-10",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 85.6
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 84.86
     },
     "BOTZ": {
       "max_1d_gain_pct": 5.18,
       "gain_date": "2026-04-08",
       "max_1d_drop_pct": -6.61,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 31.23
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 29.71
     },
     "BRK-B": {
       "max_1d_gain_pct": 3.95,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -4.91,
       "drop_date": "2026-03-02",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 592.94
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 586.76
     },
     "BUG": {
       "max_1d_gain_pct": 10.66,
       "gain_date": "2026-09-14",
       "max_1d_drop_pct": -6.73,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 44.83
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 43.23
     },
     "BX": {
       "max_1d_gain_pct": 8.38,
       "gain_date": "2026-10-22",
       "max_1d_drop_pct": -6.23,
       "drop_date": "2026-02-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 120.19
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 116.48
     },
     "C": {
       "max_1d_gain_pct": 6.0,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -5.6,
       "drop_date": "2026-10-13",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 124.01
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 119.94
     },
     "CACI": {
       "max_1d_gain_pct": 21.38,
       "gain_date": "2026-08-06",
       "max_1d_drop_pct": -8.46,
       "drop_date": "2026-02-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 642.22
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 624.01
     },
     "CAT": {
       "max_1d_gain_pct": 9.88,
       "gain_date": "2026-04-30",
       "max_1d_drop_pct": -9.25,
       "drop_date": "2026-10-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 600.2
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 570.79
     },
     "CBOE": {
       "max_1d_gain_pct": 8.95,
       "gain_date": "2026-05-01",
       "max_1d_drop_pct": -9.76,
       "drop_date": "2026-06-01",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 375.42
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 370.07
     },
     "CBRS": {
       "max_1d_gain_pct": 19.88,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -19.61,
       "drop_date": "2026-06-24",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 108.72
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 104.18
     },
     "CCJ": {
       "max_1d_gain_pct": 8.46,
       "gain_date": "2026-04-22",
       "max_1d_drop_pct": -9.28,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 70.73
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 64.51
     },
     "CCL": {
       "max_1d_gain_pct": 13.41,
       "gain_date": "2026-09-29",
       "max_1d_drop_pct": -7.89,
       "drop_date": "2026-03-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 29.23
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 28.16
     },
     "CDNS": {
       "max_1d_gain_pct": 10.46,
       "gain_date": "2026-06-01",
       "max_1d_drop_pct": -9.47,
       "drop_date": "2026-07-17",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 323.01
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 306.97
     },
     "CEG": {
       "max_1d_gain_pct": 12.25,
       "gain_date": "2026-10-06",
       "max_1d_drop_pct": -10.9,
       "drop_date": "2026-03-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 280.2
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 268.07
     },
     "CELH": {
       "max_1d_gain_pct": 16.83,
       "gain_date": "2026-08-07",
       "max_1d_drop_pct": -18.46,
       "drop_date": "2026-08-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 32.42
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 31.18
     },
     "CF": {
       "max_1d_gain_pct": 13.21,
       "gain_date": "2026-03-12",
       "max_1d_drop_pct": -9.65,
       "drop_date": "2026-04-17",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 125.09
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 119.34
     },
     "CHPT": {
       "max_1d_gain_pct": 74.95,
       "gain_date": "2026-09-03",
       "max_1d_drop_pct": -17.82,
       "drop_date": "2026-06-24",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 11.67
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 9.91
     },
     "CHWY": {
       "max_1d_gain_pct": 13.3,
       "gain_date": "2026-03-25",
       "max_1d_drop_pct": -10.83,
       "drop_date": "2026-09-09",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 22.52
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 20.42
     },
     "CIBR": {
       "max_1d_gain_pct": 7.61,
       "gain_date": "2026-08-27",
       "max_1d_drop_pct": -6.52,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 95.04
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 91.73
     },
     "CIEN": {
       "max_1d_gain_pct": 13.85,
       "gain_date": "2026-10-06",
       "max_1d_drop_pct": -15.22,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 280.54
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 264.82
     },
     "CIFR": {
       "max_1d_gain_pct": 28.07,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -19.95,
       "drop_date": "2026-11-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 6.86
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 6.42
     },
     "CL": {
       "max_1d_gain_pct": 5.92,
       "gain_date": "2026-01-30",
       "max_1d_drop_pct": -3.85,
       "drop_date": "2026-06-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 99.67
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 99.61
     },
     "CLOU": {
       "max_1d_gain_pct": 8.69,
       "gain_date": "2026-06-01",
       "max_1d_drop_pct": -5.93,
       "drop_date": "2026-04-10",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 26.38
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 25.15
     },
     "CLS": {
       "max_1d_gain_pct": 15.17,
       "gain_date": "2025-11-24",
       "max_1d_drop_pct": -14.37,
       "drop_date": "2026-04-28",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 240.34
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 236.47
     },
     "CLX": {
       "max_1d_gain_pct": 6.52,
       "gain_date": "2026-08-04",
       "max_1d_drop_pct": -9.67,
       "drop_date": "2026-05-01",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 109.46
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 106.7
     },
     "CME": {
       "max_1d_gain_pct": 5.0,
       "gain_date": "2026-07-22",
       "max_1d_drop_pct": -5.77,
       "drop_date": "2026-06-01",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 317.97
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 311.56
     },
     "CMG": {
       "max_1d_gain_pct": 12.5,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -9.72,
       "drop_date": "2026-08-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 35.28
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 35.83
     },
     "COHR": {
       "max_1d_gain_pct": 17.63,
       "gain_date": "2026-06-02",
       "max_1d_drop_pct": -14.24,
       "drop_date": "2026-08-10",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 218.15
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 210.86
     },
     "COIN": {
       "max_1d_gain_pct": 16.46,
       "gain_date": "2026-02-13",
       "max_1d_drop_pct": -13.34,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 127.65
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 115.02
     },
     "COKE": {
       "max_1d_gain_pct": 5.66,
       "gain_date": "2026-06-05",
       "max_1d_drop_pct": -15.63,
       "drop_date": "2026-05-07",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 214.34
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 205.77
     },
     "COPX": {
       "max_1d_gain_pct": 7.92,
       "gain_date": "2026-03-31",
       "max_1d_drop_pct": -10.62,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 69.23
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 65.31
     },
     "COST": {
       "max_1d_gain_pct": 3.71,
       "gain_date": "2026-01-08",
       "max_1d_drop_pct": -4.21,
       "drop_date": "2026-07-09",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 1106.21
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 1110.08
     },
     "CRCL": {
       "max_1d_gain_pct": 35.47,
       "gain_date": "2026-02-25",
       "max_1d_drop_pct": -20.11,
       "drop_date": "2026-03-24",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 62.2
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 54.63
     },
     "CRDO": {
       "max_1d_gain_pct": 18.73,
       "gain_date": "2026-04-14",
       "max_1d_drop_pct": -20.04,
       "drop_date": "2026-09-02",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 131.51
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 123.95
     },
     "CRM": {
       "max_1d_gain_pct": 22.58,
       "gain_date": "2026-08-27",
-      "max_1d_drop_pct": -8.69,
-      "drop_date": "2026-04-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 217.84
+      "max_1d_drop_pct": -9.45,
+      "drop_date": "2026-11-17",
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 194.52
     },
     "CROX": {
       "max_1d_gain_pct": 25.54,
       "gain_date": "2026-10-29",
       "max_1d_drop_pct": -7.38,
       "drop_date": "2026-07-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 163.72
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 158.79
     },
     "CRS": {
       "max_1d_gain_pct": 9.72,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -20.62,
       "drop_date": "2026-10-22",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 291.57
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 269.68
     },
     "CRSP": {
       "max_1d_gain_pct": 12.91,
       "gain_date": "2026-08-19",
       "max_1d_drop_pct": -11.59,
       "drop_date": "2026-04-24",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 42.24
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 40.15
     },
     "CRUS": {
       "max_1d_gain_pct": 8.29,
       "gain_date": "2026-02-04",
       "max_1d_drop_pct": -6.39,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 120.19
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 116.01
     },
     "CRWD": {
       "max_1d_gain_pct": 20.5,
       "gain_date": "2026-08-27",
       "max_1d_drop_pct": -9.88,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 226.61
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 219.58
     },
     "CRWV": {
       "max_1d_gain_pct": 24.71,
       "gain_date": "2026-11-11",
       "max_1d_drop_pct": -18.51,
       "drop_date": "2026-02-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 53.13
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 49.89
     },
     "CSCO": {
       "max_1d_gain_pct": 13.41,
       "gain_date": "2026-05-14",
       "max_1d_drop_pct": -12.32,
       "drop_date": "2026-02-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 95.64
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 95.11
     },
     "CSIQ": {
       "max_1d_gain_pct": 13.46,
       "gain_date": "2026-05-08",
       "max_1d_drop_pct": -26.94,
       "drop_date": "2026-03-19",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 9.88
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 7.81
     },
     "CVNA": {
       "max_1d_gain_pct": 15.68,
       "gain_date": "2026-10-29",
       "max_1d_drop_pct": -14.17,
       "drop_date": "2026-01-28",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 72.37
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 71.1
     },
     "CVS": {
       "max_1d_gain_pct": 7.65,
       "gain_date": "2026-05-06",
       "max_1d_drop_pct": -14.15,
       "drop_date": "2026-01-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 89.35
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 85.81
     },
     "CVX": {
       "max_1d_gain_pct": 5.1,
       "gain_date": "2026-01-05",
       "max_1d_drop_pct": -4.59,
       "drop_date": "2026-04-01",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 219.89
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 216.13
     },
     "D": {
       "max_1d_gain_pct": 9.44,
       "gain_date": "2026-05-18",
       "max_1d_drop_pct": -3.72,
       "drop_date": "2025-12-22",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 67.66
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 67.28
     },
     "DAL": {
       "max_1d_gain_pct": 9.39,
       "gain_date": "2026-05-20",
       "max_1d_drop_pct": -6.82,
       "drop_date": "2026-02-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 86.25
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 84.3
     },
     "DASH": {
       "max_1d_gain_pct": 11.63,
       "gain_date": "2026-06-15",
       "max_1d_drop_pct": -9.4,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 171.51
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 164.91
     },
     "DDOG": {
       "max_1d_gain_pct": 31.33,
       "gain_date": "2026-05-07",
       "max_1d_drop_pct": -19.03,
       "drop_date": "2026-08-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 184.16
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 165.18
     },
     "DE": {
       "max_1d_gain_pct": 11.58,
       "gain_date": "2026-02-19",
       "max_1d_drop_pct": -5.67,
       "drop_date": "2025-11-26",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 673.54
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 649.23
     },
     "DELL": {
       "max_1d_gain_pct": 32.76,
       "gain_date": "2026-05-29",
       "max_1d_drop_pct": -14.89,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 344.53
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 322.79
     },
     "DHI": {
       "max_1d_gain_pct": 8.1,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -5.03,
       "drop_date": "2026-11-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 145.55
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 143.52
     },
     "DIOD": {
       "max_1d_gain_pct": 26.42,
       "gain_date": "2026-02-11",
       "max_1d_drop_pct": -13.97,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 87.25
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 83.66
     },
     "DIS": {
       "max_1d_gain_pct": 7.54,
       "gain_date": "2026-05-06",
       "max_1d_drop_pct": -7.4,
       "drop_date": "2026-02-02",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 118.97
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 116.94
     },
     "DKNG": {
       "max_1d_gain_pct": 11.34,
       "gain_date": "2026-06-09",
       "max_1d_drop_pct": -21.3,
       "drop_date": "2026-11-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 18.89
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 18.0
     },
     "DLTR": {
       "max_1d_gain_pct": 17.87,
       "gain_date": "2026-05-28",
       "max_1d_drop_pct": -6.16,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 138.08
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 139.71
     },
     "DOCN": {
       "max_1d_gain_pct": 40.4,
       "gain_date": "2026-05-05",
       "max_1d_drop_pct": -15.85,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 86.32
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 79.44
     },
     "DOCU": {
       "max_1d_gain_pct": 10.31,
       "gain_date": "2026-08-13",
       "max_1d_drop_pct": -11.4,
       "drop_date": "2026-02-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 80.76
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 75.93
     },
     "DOW": {
       "max_1d_gain_pct": 9.34,
       "gain_date": "2026-03-12",
       "max_1d_drop_pct": -10.82,
       "drop_date": "2026-04-17",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 33.04
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 31.37
     },
     "DPZ": {
       "max_1d_gain_pct": 6.05,
       "gain_date": "2026-07-16",
       "max_1d_drop_pct": -8.84,
       "drop_date": "2026-04-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 341.72
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 349.86
     },
     "DQ": {
       "max_1d_gain_pct": 15.22,
       "gain_date": "2026-04-22",
       "max_1d_drop_pct": -11.85,
       "drop_date": "2026-04-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 10.91
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 9.45
     },
     "DRAM": {
       "max_1d_gain_pct": 16.7,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -17.96,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 42.4
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 38.93
     },
     "DRI": {
       "max_1d_gain_pct": 5.11,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -4.72,
       "drop_date": "2026-01-26",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 228.74
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 231.85
     },
     "DT": {
       "max_1d_gain_pct": 11.27,
       "gain_date": "2026-08-05",
       "max_1d_drop_pct": -14.69,
       "drop_date": "2026-11-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 44.8
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 43.19
     },
     "DUK": {
       "max_1d_gain_pct": 3.92,
       "gain_date": "2026-10-22",
       "max_1d_drop_pct": -2.93,
       "drop_date": "2026-08-10",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 129.16
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 129.84
     },
     "EBAY": {
       "max_1d_gain_pct": 5.5,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -7.08,
       "drop_date": "2026-02-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 120.92
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 118.59
     },
     "EEM": {
       "max_1d_gain_pct": 5.46,
       "gain_date": "2026-04-08",
       "max_1d_drop_pct": -6.53,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 60.92
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 58.27
     },
     "EL": {
       "max_1d_gain_pct": 16.3,
       "gain_date": "2026-08-19",
       "max_1d_drop_pct": -19.19,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 111.75
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 104.52
     },
     "ELV": {
       "max_1d_gain_pct": 7.62,
       "gain_date": "2026-07-01",
       "max_1d_drop_pct": -14.33,
       "drop_date": "2026-01-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 429.69
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 433.93
     },
     "ENPH": {
       "max_1d_gain_pct": 38.6,
       "gain_date": "2026-02-04",
       "max_1d_drop_pct": -18.01,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 26.07
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 23.06
     },
     "ENTG": {
       "max_1d_gain_pct": 15.46,
       "gain_date": "2026-08-04",
       "max_1d_drop_pct": -13.12,
       "drop_date": "2026-10-22",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 147.41
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 140.78
     },
     "EOSE": {
       "max_1d_gain_pct": 29.63,
       "gain_date": "2026-04-09",
       "max_1d_drop_pct": -39.44,
       "drop_date": "2026-02-26",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 1.91
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 1.49
     },
     "EPAM": {
       "max_1d_gain_pct": 20.63,
       "gain_date": "2026-11-05",
       "max_1d_drop_pct": -17.01,
       "drop_date": "2026-02-19",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 163.15
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 154.14
     },
     "EQIX": {
       "max_1d_gain_pct": 10.41,
       "gain_date": "2026-02-12",
       "max_1d_drop_pct": -5.38,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 1053.79
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 1034.83
     },
     "ESTC": {
       "max_1d_gain_pct": 19.31,
       "gain_date": "2026-08-28",
       "max_1d_drop_pct": -15.44,
       "drop_date": "2026-02-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 88.15
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 80.39
     },
     "ETHA": {
       "max_1d_gain_pct": 11.76,
       "gain_date": "2026-02-25",
       "max_1d_drop_pct": -13.95,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 44.02
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 40.65
     },
     "ETN": {
       "max_1d_gain_pct": 7.32,
       "gain_date": "2026-07-31",
       "max_1d_drop_pct": -9.86,
       "drop_date": "2026-11-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 352.97
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 337.11
     },
     "ETSY": {
       "max_1d_gain_pct": 10.11,
       "gain_date": "2026-04-29",
       "max_1d_drop_pct": -12.24,
       "drop_date": "2026-02-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 89.0
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 82.62
     },
     "EUV": {
       "max_1d_gain_pct": 10.64,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -12.46,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 19.21
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 17.98
     },
     "EWJ": {
       "max_1d_gain_pct": 4.56,
       "gain_date": "2026-04-08",
       "max_1d_drop_pct": -5.97,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 91.76
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 88.69
     },
     "EWY": {
       "max_1d_gain_pct": 11.79,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -14.11,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 142.78
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 135.32
     },
     "EXC": {
       "max_1d_gain_pct": 6.97,
       "gain_date": "2026-02-12",
       "max_1d_drop_pct": -3.27,
       "drop_date": "2026-03-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 46.25
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 45.86
     },
     "EXPE": {
       "max_1d_gain_pct": 13.69,
       "gain_date": "2026-03-05",
       "max_1d_drop_pct": -15.26,
       "drop_date": "2026-02-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 257.97
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 243.16
     },
     "F": {
       "max_1d_gain_pct": 13.18,
       "gain_date": "2026-05-13",
       "max_1d_drop_pct": -7.46,
       "drop_date": "2026-05-15",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 11.91
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 11.34
     },
     "FANG": {
       "max_1d_gain_pct": 5.81,
       "gain_date": "2026-08-10",
       "max_1d_drop_pct": -8.03,
       "drop_date": "2026-09-16",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 184.93
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 177.07
     },
     "FCEL": {
       "max_1d_gain_pct": 37.22,
       "gain_date": "2026-04-29",
       "max_1d_drop_pct": -19.02,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 9.68
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 8.25
     },
     "FCX": {
       "max_1d_gain_pct": 7.64,
       "gain_date": "2026-08-21",
       "max_1d_drop_pct": -12.62,
       "drop_date": "2026-04-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 59.24
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 55.3
     },
     "FDS": {
       "max_1d_gain_pct": 10.97,
       "gain_date": "2026-06-26",
       "max_1d_drop_pct": -10.51,
       "drop_date": "2026-02-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 332.69
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 316.1
     },
     "FDX": {
       "max_1d_gain_pct": 5.87,
       "gain_date": "2026-06-11",
       "max_1d_drop_pct": -9.11,
       "drop_date": "2026-05-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 324.14
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 319.94
     },
     "FIGR": {
       "max_1d_gain_pct": 21.67,
       "gain_date": "2026-01-05",
       "max_1d_drop_pct": -25.73,
       "drop_date": "2026-02-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 25.22
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 24.72
     },
     "FISV": {
       "max_1d_gain_pct": 12.46,
       "gain_date": "2026-11-03",
       "max_1d_drop_pct": -10.91,
       "drop_date": "2026-06-15",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 63.78
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 62.31
     },
     "FLEX": {
       "max_1d_gain_pct": 39.69,
       "gain_date": "2026-05-06",
       "max_1d_drop_pct": -13.61,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 74.98
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 73.09
     },
     "FN": {
       "max_1d_gain_pct": 16.47,
       "gain_date": "2026-08-04",
       "max_1d_drop_pct": -19.38,
       "drop_date": "2026-08-18",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 327.98
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 314.75
     },
     "FORM": {
       "max_1d_gain_pct": 26.28,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -16.0,
       "drop_date": "2026-07-02",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 87.53
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 83.03
     },
     "FOTO": {
       "max_1d_gain_pct": 11.77,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -14.39,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 13.49
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 12.73
     },
     "FROG": {
       "max_1d_gain_pct": 35.33,
       "gain_date": "2026-11-06",
       "max_1d_drop_pct": -24.94,
       "drop_date": "2026-02-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 113.6
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 105.1
     },
     "FSLR": {
       "max_1d_gain_pct": 10.86,
       "gain_date": "2026-05-28",
       "max_1d_drop_pct": -13.61,
       "drop_date": "2026-02-25",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 171.39
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 152.97
     },
     "FSLY": {
       "max_1d_gain_pct": 72.29,
       "gain_date": "2026-02-12",
       "max_1d_drop_pct": -38.23,
       "drop_date": "2026-05-07",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 16.62
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 15.9
     },
     "FTNT": {
       "max_1d_gain_pct": 20.03,
       "gain_date": "2026-05-07",
       "max_1d_drop_pct": -20.09,
       "drop_date": "2026-10-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 127.22
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 124.5
     },
     "FUBO": {
       "max_1d_gain_pct": 23.54,
       "gain_date": "2026-04-06",
       "max_1d_drop_pct": -22.03,
       "drop_date": "2026-02-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 7.57
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 6.87
     },
     "FUTU": {
       "max_1d_gain_pct": 19.99,
       "gain_date": "2026-05-26",
       "max_1d_drop_pct": -27.53,
       "drop_date": "2026-05-22",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 95.75
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 86.89
     },
     "GDX": {
       "max_1d_gain_pct": 9.42,
       "gain_date": "2026-08-19",
       "max_1d_drop_pct": -12.76,
       "drop_date": "2026-01-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 81.64
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 79.57
     },
     "GE": {
       "max_1d_gain_pct": 6.74,
       "gain_date": "2026-04-08",
       "max_1d_drop_pct": -7.38,
       "drop_date": "2026-01-22",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 331.81
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 326.4
     },
     "GEV": {
       "max_1d_gain_pct": 15.62,
       "gain_date": "2025-12-10",
       "max_1d_drop_pct": -10.64,
       "drop_date": "2026-10-22",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 803.13
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 779.91
     },
     "GFS": {
       "max_1d_gain_pct": 16.32,
       "gain_date": "2026-02-11",
       "max_1d_drop_pct": -10.83,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 41.47
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 39.6
     },
     "GH": {
       "max_1d_gain_pct": 17.09,
       "gain_date": "2026-05-20",
       "max_1d_drop_pct": -9.83,
       "drop_date": "2026-04-10",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 151.7
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 143.28
     },
     "GILD": {
       "max_1d_gain_pct": 5.82,
       "gain_date": "2026-02-11",
       "max_1d_drop_pct": -3.96,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 168.08
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 170.26
     },
     "GLD": {
       "max_1d_gain_pct": 6.36,
       "gain_date": "2026-02-03",
       "max_1d_drop_pct": -10.27,
       "drop_date": "2026-01-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 355.45
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 352.48
     },
     "GLW": {
       "max_1d_gain_pct": 15.67,
       "gain_date": "2026-06-29",
       "max_1d_drop_pct": -13.7,
       "drop_date": "2026-09-14",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 114.08
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 108.49
     },
     "GM": {
       "max_1d_gain_pct": 8.75,
       "gain_date": "2026-01-27",
       "max_1d_drop_pct": -6.84,
       "drop_date": "2026-10-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 86.0
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 84.05
     },
     "GNRC": {
       "max_1d_gain_pct": 18.34,
       "gain_date": "2026-09-17",
       "max_1d_drop_pct": -9.54,
       "drop_date": "2026-11-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 190.77
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 187.0
     },
     "GOOGL": {
       "max_1d_gain_pct": 9.96,
       "gain_date": "2026-04-30",
       "max_1d_drop_pct": -12.64,
       "drop_date": "2026-10-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 295.77
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 280.2
     },
     "GRAB": {
       "max_1d_gain_pct": 9.09,
       "gain_date": "2026-11-03",
       "max_1d_drop_pct": -6.46,
       "drop_date": "2026-09-09",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 3.24
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 3.18
     },
     "GRID": {
       "max_1d_gain_pct": 5.44,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -6.31,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 160.29
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 155.15
     },
     "GS": {
       "max_1d_gain_pct": 9.0,
       "gain_date": "2026-07-14",
       "max_1d_drop_pct": -7.47,
       "drop_date": "2026-02-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 916.56
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 877.52
     },
     "GXC": {
       "max_1d_gain_pct": 4.16,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -3.11,
       "drop_date": "2026-03-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 81.11
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 79.31
     },
     "HACK": {
       "max_1d_gain_pct": 8.18,
       "gain_date": "2026-08-27",
       "max_1d_drop_pct": -6.88,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 115.82
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 112.7
     },
     "HBMX": {
       "max_1d_gain_pct": 14.49,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -15.12,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 18.05
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 16.69
     },
     "HD": {
       "max_1d_gain_pct": 6.53,
       "gain_date": "2026-11-04",
-      "max_1d_drop_pct": -6.02,
-      "drop_date": "2025-11-18",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 348.69
+      "max_1d_drop_pct": -3.54,
+      "drop_date": "2026-05-04",
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 339.01
     },
     "HIMS": {
       "max_1d_gain_pct": 40.79,
       "gain_date": "2026-03-09",
       "max_1d_drop_pct": -16.61,
       "drop_date": "2026-11-10",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 19.73
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 17.55
     },
     "HLT": {
       "max_1d_gain_pct": 4.98,
       "gain_date": "2026-04-08",
       "max_1d_drop_pct": -3.88,
       "drop_date": "2026-07-13",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 373.09
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 370.53
     },
     "HON": {
       "max_1d_gain_pct": 6.43,
       "gain_date": "2026-06-11",
       "max_1d_drop_pct": -6.46,
       "drop_date": "2026-06-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 222.46
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 218.96
     },
     "HOOD": {
       "max_1d_gain_pct": 16.57,
       "gain_date": "2026-09-03",
       "max_1d_drop_pct": -13.24,
       "drop_date": "2026-04-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 77.86
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 69.19
     },
     "HP": {
       "max_1d_gain_pct": 12.86,
       "gain_date": "2026-08-10",
       "max_1d_drop_pct": -9.65,
       "drop_date": "2026-11-02",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 38.06
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 35.96
     },
     "HPE": {
       "max_1d_gain_pct": 19.47,
       "gain_date": "2026-06-02",
       "max_1d_drop_pct": -11.84,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 48.29
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 46.09
     },
     "HROW": {
       "max_1d_gain_pct": 10.83,
       "gain_date": "2025-12-03",
       "max_1d_drop_pct": -27.95,
       "drop_date": "2026-03-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 30.12
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 29.52
     },
     "HSBC": {
       "max_1d_gain_pct": 7.19,
       "gain_date": "2026-02-25",
       "max_1d_drop_pct": -5.7,
       "drop_date": "2026-10-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 89.62
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 87.28
     },
     "HUM": {
       "max_1d_gain_pct": 11.56,
       "gain_date": "2026-10-09",
       "max_1d_drop_pct": -21.13,
       "drop_date": "2026-01-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 450.0
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 443.34
     },
     "HYDR": {
       "max_1d_gain_pct": 13.78,
       "gain_date": "2026-04-29",
       "max_1d_drop_pct": -10.38,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 33.015
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 30.5
     },
     "IAI": {
       "max_1d_gain_pct": 3.79,
       "gain_date": "2026-09-03",
       "max_1d_drop_pct": -3.91,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 183.09
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 176.27
     },
     "IAT": {
       "max_1d_gain_pct": 3.63,
       "gain_date": "2026-06-04",
       "max_1d_drop_pct": -4.89,
       "drop_date": "2026-02-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 60.69
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 58.8
     },
     "IBB": {
       "max_1d_gain_pct": 6.58,
       "gain_date": "2026-08-19",
       "max_1d_drop_pct": -5.04,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 212.5
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 206.97
     },
     "IBIT": {
       "max_1d_gain_pct": 9.92,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -13.16,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 38.94
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 36.14
     },
     "IBKR": {
       "max_1d_gain_pct": 7.34,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -7.01,
       "drop_date": "2026-09-01",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 81.79
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 76.46
     },
     "IBM": {
       "max_1d_gain_pct": 12.71,
       "gain_date": "2026-05-29",
       "max_1d_drop_pct": -25.21,
       "drop_date": "2026-07-14",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 247.13
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 231.09
     },
     "ICE": {
       "max_1d_gain_pct": 4.94,
       "gain_date": "2026-07-02",
       "max_1d_drop_pct": -7.78,
       "drop_date": "2026-02-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 178.51
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 172.22
     },
     "ICHR": {
       "max_1d_gain_pct": 32.72,
       "gain_date": "2026-02-10",
       "max_1d_drop_pct": -16.85,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 35.72
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 33.64
     },
     "ICLN": {
       "max_1d_gain_pct": 4.74,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -7.71,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 15.81
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 14.85
     },
     "IDXX": {
       "max_1d_gain_pct": 21.85,
       "gain_date": "2026-11-02",
       "max_1d_drop_pct": -5.02,
       "drop_date": "2026-05-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 704.23
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 690.24
     },
     "IESC": {
       "max_1d_gain_pct": 30.27,
       "gain_date": "2026-07-31",
       "max_1d_drop_pct": -19.87,
       "drop_date": "2026-01-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 170.28
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 168.34
     },
     "IGV": {
       "max_1d_gain_pct": 7.74,
       "gain_date": "2026-08-27",
       "max_1d_drop_pct": -5.83,
       "drop_date": "2026-04-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 101.19
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 95.74
     },
     "IHF": {
       "max_1d_gain_pct": 3.65,
       "gain_date": "2026-04-07",
       "max_1d_drop_pct": -9.64,
       "drop_date": "2026-01-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 60.41
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 59.12
     },
     "IHI": {
       "max_1d_gain_pct": 6.72,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -4.13,
       "drop_date": "2026-07-14",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 58.02
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 56.94
     },
     "INMD": {
       "max_1d_gain_pct": 10.79,
       "gain_date": "2026-06-24",
       "max_1d_drop_pct": -8.82,
       "drop_date": "2026-01-08",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 13.27
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 12.92
     },
     "INOD": {
       "max_1d_gain_pct": 86.0,
       "gain_date": "2026-05-08",
       "max_1d_drop_pct": -25.32,
       "drop_date": "2026-10-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 35.46
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 32.41
     },
     "INTC": {
       "max_1d_gain_pct": 23.6,
       "gain_date": "2026-04-24",
       "max_1d_drop_pct": -28.58,
       "drop_date": "2026-10-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 59.66
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 55.17
     },
     "INTU": {
       "max_1d_gain_pct": 7.04,
       "gain_date": "2026-08-13",
       "max_1d_drop_pct": -20.02,
       "drop_date": "2026-05-21",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 341.7
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 320.79
     },
     "IONQ": {
       "max_1d_gain_pct": 23.42,
       "gain_date": "2026-11-06",
       "max_1d_drop_pct": -14.37,
       "drop_date": "2025-11-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 28.88
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 24.84
     },
     "IPAY": {
       "max_1d_gain_pct": 3.96,
       "gain_date": "2026-04-13",
       "max_1d_drop_pct": -5.49,
       "drop_date": "2026-02-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 50.377
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 48.15
     },
     "IPO": {
       "max_1d_gain_pct": 6.24,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -8.15,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 46.72
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 45.19
     },
     "IREN": {
       "max_1d_gain_pct": 30.54,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -17.37,
       "drop_date": "2026-02-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 18.17
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 15.805
     },
     "ISRG": {
       "max_1d_gain_pct": 9.38,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -14.15,
       "drop_date": "2026-07-17",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 443.59
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 430.53
     },
     "ITA": {
       "max_1d_gain_pct": 4.97,
       "gain_date": "2026-06-11",
       "max_1d_drop_pct": -4.0,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 71.51
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 69.6
     },
     "ITB": {
       "max_1d_gain_pct": 7.25,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -3.97,
       "drop_date": "2026-07-08",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 94.01
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 91.73
     },
     "IWM": {
       "max_1d_gain_pct": 3.59,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -4.59,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 277.54
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 269.05
     },
     "IYT": {
       "max_1d_gain_pct": 3.55,
       "gain_date": "2026-05-06",
       "max_1d_drop_pct": -3.95,
       "drop_date": "2026-05-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 83.71
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 82.34
     },
     "IYZ": {
       "max_1d_gain_pct": 4.91,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -5.41,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 39.0
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 38.29
     },
     "JD": {
       "max_1d_gain_pct": 8.3,
       "gain_date": "2026-03-25",
-      "max_1d_drop_pct": -7.31,
-      "drop_date": "2026-08-13",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 27.91
+      "max_1d_drop_pct": -7.66,
+      "drop_date": "2026-11-17",
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 25.43
     },
     "JEF": {
       "max_1d_gain_pct": 5.87,
       "gain_date": "2026-07-15",
       "max_1d_drop_pct": -13.53,
       "drop_date": "2026-03-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 45.69
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 42.53
     },
     "JETS": {
       "max_1d_gain_pct": 6.7,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -4.59,
       "drop_date": "2026-06-10",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 28.84
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 28.35
     },
     "JKS": {
       "max_1d_gain_pct": 10.85,
       "gain_date": "2026-04-22",
       "max_1d_drop_pct": -12.44,
       "drop_date": "2026-01-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 9.4
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 7.97
     },
     "JMIA": {
       "max_1d_gain_pct": 16.76,
       "gain_date": "2026-05-07",
       "max_1d_drop_pct": -15.81,
       "drop_date": "2026-02-10",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 5.33
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 4.63
     },
     "JNJ": {
       "max_1d_gain_pct": 3.99,
       "gain_date": "2026-06-26",
       "max_1d_drop_pct": -5.73,
       "drop_date": "2026-10-13",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 285.75
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 278.7
     },
     "JPM": {
       "max_1d_gain_pct": 4.18,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -4.66,
       "drop_date": "2025-12-09",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 346.19
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 329.96
     },
     "KBE": {
       "max_1d_gain_pct": 3.93,
       "gain_date": "2026-01-21",
       "max_1d_drop_pct": -4.95,
       "drop_date": "2026-02-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 66.45
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 64.78
     },
     "KEYS": {
       "max_1d_gain_pct": 23.05,
       "gain_date": "2026-02-24",
       "max_1d_drop_pct": -8.83,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 297.68
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 284.45
     },
     "KLAC": {
       "max_1d_gain_pct": 12.92,
       "gain_date": "2026-06-11",
       "max_1d_drop_pct": -15.24,
       "drop_date": "2026-01-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 152.32
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 144.56
     },
     "KLIC": {
       "max_1d_gain_pct": 19.27,
       "gain_date": "2026-02-05",
       "max_1d_drop_pct": -12.58,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 69.07
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 65.5
     },
     "KMI": {
       "max_1d_gain_pct": 4.2,
       "gain_date": "2026-10-16",
       "max_1d_drop_pct": -4.22,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 31.92
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 31.7
     },
     "KO": {
       "max_1d_gain_pct": 5.0,
       "gain_date": "2026-07-28",
       "max_1d_drop_pct": -3.96,
       "drop_date": "2026-07-17",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 99.25
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 98.79
     },
     "KRE": {
       "max_1d_gain_pct": 4.66,
       "gain_date": "2026-01-21",
       "max_1d_drop_pct": -5.14,
       "drop_date": "2026-02-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 72.74
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 70.85
     },
     "KRMN": {
       "max_1d_gain_pct": 42.13,
       "gain_date": "2026-11-06",
       "max_1d_drop_pct": -13.64,
       "drop_date": "2026-03-26",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 40.66
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 35.55
     },
     "KWEB": {
       "max_1d_gain_pct": 5.11,
       "gain_date": "2026-01-12",
       "max_1d_drop_pct": -4.54,
       "drop_date": "2026-05-14",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 22.93
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 22.08
     },
     "LCID": {
       "max_1d_gain_pct": 28.79,
       "gain_date": "2026-07-15",
       "max_1d_drop_pct": -16.15,
       "drop_date": "2026-07-14",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 2.955
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 2.91
     },
     "LEN": {
       "max_1d_gain_pct": 8.85,
       "gain_date": "2026-01-09",
       "max_1d_drop_pct": -6.73,
       "drop_date": "2026-10-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 83.61
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 82.34
     },
     "LEU": {
       "max_1d_gain_pct": 17.49,
       "gain_date": "2026-11-06",
       "max_1d_drop_pct": -20.69,
       "drop_date": "2026-02-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 103.78
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 94.19
     },
     "LEVI": {
       "max_1d_gain_pct": 10.65,
       "gain_date": "2026-04-08",
       "max_1d_drop_pct": -4.97,
       "drop_date": "2026-10-07",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 24.29
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 23.76
     },
     "LGN": {
       "max_1d_gain_pct": 16.84,
       "gain_date": "2026-02-20",
       "max_1d_drop_pct": -20.92,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 35.0
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 34.85
     },
     "LI": {
       "max_1d_gain_pct": 6.83,
       "gain_date": "2026-05-13",
       "max_1d_drop_pct": -9.83,
       "drop_date": "2026-05-18",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 11.64
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 11.57
     },
     "LIN": {
       "max_1d_gain_pct": 3.21,
       "gain_date": "2025-12-12",
       "max_1d_drop_pct": -5.95,
       "drop_date": "2026-07-31",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 526.06
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 515.11
     },
     "LIT": {
       "max_1d_gain_pct": 5.49,
       "gain_date": "2026-06-11",
       "max_1d_drop_pct": -6.47,
       "drop_date": "2026-03-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 58.76
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 56.42
     },
     "LITE": {
       "max_1d_gain_pct": 17.13,
       "gain_date": "2025-11-24",
       "max_1d_drop_pct": -18.68,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 596.62
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 559.97
     },
     "LLY": {
       "max_1d_gain_pct": 10.33,
       "gain_date": "2026-02-04",
       "max_1d_drop_pct": -7.79,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 1443.5
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 1415.55
     },
     "LMND": {
       "max_1d_gain_pct": 15.81,
       "gain_date": "2026-03-17",
       "max_1d_drop_pct": -23.72,
       "drop_date": "2026-07-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 44.19
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 41.01
     },
     "LMT": {
       "max_1d_gain_pct": 10.54,
       "gain_date": "2026-07-23",
       "max_1d_drop_pct": -6.88,
       "drop_date": "2026-11-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 596.04
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 590.34
     },
     "LNG": {
       "max_1d_gain_pct": 7.11,
       "gain_date": "2026-10-29",
       "max_1d_drop_pct": -6.15,
       "drop_date": "2026-11-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 308.75
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 301.97
     },
     "LOVE": {
       "max_1d_gain_pct": 21.88,
       "gain_date": "2026-03-26",
       "max_1d_drop_pct": -11.04,
       "drop_date": "2026-09-10",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 15.14
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 14.18
     },
     "LOW": {
       "max_1d_gain_pct": 7.5,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -5.59,
       "drop_date": "2026-02-25",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 227.73
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 220.46
     },
     "LRCX": {
       "max_1d_gain_pct": 17.98,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -16.36,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 225.92
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 210.69
     },
     "LSCC": {
       "max_1d_gain_pct": 16.29,
       "gain_date": "2026-02-11",
       "max_1d_drop_pct": -11.07,
       "drop_date": "2026-09-14",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 112.35
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 109.8
     },
     "LULU": {
       "max_1d_gain_pct": 9.6,
       "gain_date": "2025-12-12",
       "max_1d_drop_pct": -17.38,
       "drop_date": "2026-09-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 105.65
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 104.14
     },
     "LUV": {
       "max_1d_gain_pct": 18.7,
       "gain_date": "2026-01-29",
       "max_1d_drop_pct": -7.34,
       "drop_date": "2026-03-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 44.94
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 45.59
     },
     "LYTE": {
       "max_1d_gain_pct": 11.89,
       "gain_date": "2026-11-11",
       "max_1d_drop_pct": -13.84,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 15.07
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 13.65
     },
     "MA": {
       "max_1d_gain_pct": 4.55,
       "gain_date": "2025-12-11",
       "max_1d_drop_pct": -5.77,
       "drop_date": "2026-02-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 661.19
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 645.73
     },
     "MAGS": {
       "max_1d_gain_pct": 4.6,
       "gain_date": "2026-03-31",
       "max_1d_drop_pct": -4.88,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 68.66
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 66.42
     },
     "MAR": {
       "max_1d_gain_pct": 8.5,
       "gain_date": "2026-02-10",
       "max_1d_drop_pct": -6.97,
       "drop_date": "2026-08-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 423.16
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 422.74
     },
     "MARA": {
       "max_1d_gain_pct": 22.44,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -18.72,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 6.99
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 6.42
     },
     "MCD": {
       "max_1d_gain_pct": 6.53,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -4.81,
       "drop_date": "2026-09-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 271.97
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 275.82
     },
     "MCHP": {
       "max_1d_gain_pct": 13.89,
       "gain_date": "2026-08-07",
       "max_1d_drop_pct": -13.92,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 61.68
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 59.43
     },
     "MCO": {
       "max_1d_gain_pct": 6.51,
       "gain_date": "2026-02-18",
       "max_1d_drop_pct": -8.9,
       "drop_date": "2026-02-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 508.2
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 484.41
     },
     "MDB": {
       "max_1d_gain_pct": 22.23,
       "gain_date": "2025-12-02",
       "max_1d_drop_pct": -22.24,
       "drop_date": "2026-03-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 334.2
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 298.63
     },
     "MELI": {
       "max_1d_gain_pct": 9.67,
       "gain_date": "2026-10-05",
       "max_1d_drop_pct": -12.7,
       "drop_date": "2026-05-08",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 1491.49
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 1436.83
     },
     "META": {
       "max_1d_gain_pct": 11.43,
       "gain_date": "2026-09-21",
       "max_1d_drop_pct": -8.55,
       "drop_date": "2026-04-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 641.69
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 618.87
     },
     "MJ": {
       "max_1d_gain_pct": 42.77,
       "gain_date": "2025-12-12",
       "max_1d_drop_pct": -16.21,
       "drop_date": "2025-12-18",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 21.35
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 20.47
     },
     "MKSI": {
       "max_1d_gain_pct": 13.85,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -11.07,
       "drop_date": "2026-07-02",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 215.65
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 206.44
     },
     "MNST": {
       "max_1d_gain_pct": 13.58,
       "gain_date": "2026-05-08",
       "max_1d_drop_pct": -4.97,
       "drop_date": "2026-03-02",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 46.46
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 44.44
     },
     "MP": {
       "max_1d_gain_pct": 10.0,
       "gain_date": "2026-04-08",
       "max_1d_drop_pct": -11.99,
       "drop_date": "2026-03-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 38.76
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 34.86
     },
     "MPWR": {
       "max_1d_gain_pct": 16.6,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -10.38,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 1390.54
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 1317.37
     },
     "MRK": {
       "max_1d_gain_pct": 12.6,
       "gain_date": "2026-08-19",
       "max_1d_drop_pct": -3.88,
       "drop_date": "2026-04-21",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 147.76
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 143.37
     },
     "MRNA": {
       "max_1d_gain_pct": 176.97,
       "gain_date": "2026-08-19",
       "max_1d_drop_pct": -23.55,
       "drop_date": "2026-08-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 223.37
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 206.8
     },
     "MRVL": {
       "max_1d_gain_pct": 32.52,
       "gain_date": "2026-06-02",
       "max_1d_drop_pct": -16.74,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 156.76
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 148.74
     },
     "MS": {
       "max_1d_gain_pct": 5.78,
       "gain_date": "2026-01-15",
       "max_1d_drop_pct": -6.19,
       "drop_date": "2026-02-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 190.65
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 183.53
     },
     "MSFT": {
       "max_1d_gain_pct": 15.51,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -9.99,
       "drop_date": "2026-01-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 523.88
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 506.24
     },
     "MSTR": {
       "max_1d_gain_pct": 26.11,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -17.12,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 111.62
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 96.5
     },
     "MU": {
       "max_1d_gain_pct": 19.29,
       "gain_date": "2026-05-26",
       "max_1d_drop_pct": -17.46,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 778.31
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 712.42
     },
     "NASA": {
       "max_1d_gain_pct": 12.8,
       "gain_date": "2026-06-11",
       "max_1d_drop_pct": -10.39,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 20.87
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 19.64
     },
     "NBIS": {
       "max_1d_gain_pct": 34.14,
       "gain_date": "2026-08-12",
       "max_1d_drop_pct": -17.01,
       "drop_date": "2026-07-01",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 115.88
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 106.035
     },
     "NCLD": {
       "max_1d_gain_pct": 17.24,
       "gain_date": "2026-08-12",
       "max_1d_drop_pct": -12.37,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 13.61
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 12.6
     },
     "NCLH": {
       "max_1d_gain_pct": 13.45,
       "gain_date": "2026-10-29",
       "max_1d_drop_pct": -10.53,
       "drop_date": "2026-03-02",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 17.96
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 17.61
     },
     "NDAQ": {
       "max_1d_gain_pct": 7.47,
       "gain_date": "2026-10-22",
       "max_1d_drop_pct": -9.4,
       "drop_date": "2026-02-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 108.47
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 105.13
     },
     "NEE": {
       "max_1d_gain_pct": 6.94,
       "gain_date": "2026-04-23",
       "max_1d_drop_pct": -4.63,
       "drop_date": "2026-05-18",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 85.12
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 84.42
     },
     "NEM": {
       "max_1d_gain_pct": 9.9,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -11.49,
       "drop_date": "2026-01-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 113.14
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 111.26
     },
     "NET": {
       "max_1d_gain_pct": 11.99,
       "gain_date": "2026-06-01",
       "max_1d_drop_pct": -23.62,
       "drop_date": "2026-05-08",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 305.81
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 284.8
     },
     "NFLX": {
       "max_1d_gain_pct": 13.77,
       "gain_date": "2026-02-27",
       "max_1d_drop_pct": -9.72,
       "drop_date": "2026-04-17",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 62.15
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 59.68
     },
     "NIO": {
       "max_1d_gain_pct": 15.38,
       "gain_date": "2026-03-10",
       "max_1d_drop_pct": -7.81,
       "drop_date": "2026-03-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 2.9
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 2.81
     },
     "NKE": {
       "max_1d_gain_pct": 5.4,
       "gain_date": "2026-02-04",
       "max_1d_drop_pct": -15.51,
       "drop_date": "2026-04-01",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 37.99
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 35.85
     },
     "NLR": {
       "max_1d_gain_pct": 7.12,
       "gain_date": "2026-01-02",
       "max_1d_drop_pct": -7.19,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 88.39
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 84.3
     },
     "NNDM": {
       "max_1d_gain_pct": 11.56,
       "gain_date": "2026-05-01",
       "max_1d_drop_pct": -16.11,
       "drop_date": "2026-06-15",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 1.24
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 1.19
     },
     "NOC": {
       "max_1d_gain_pct": 6.02,
       "gain_date": "2026-03-02",
       "max_1d_drop_pct": -6.98,
       "drop_date": "2026-04-21",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 550.43
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 553.26
     },
     "NOK": {
       "max_1d_gain_pct": 11.69,
       "gain_date": "2026-05-13",
       "max_1d_drop_pct": -14.81,
       "drop_date": "2026-10-22",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 8.07
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 7.59
     },
     "NOW": {
       "max_1d_gain_pct": 14.38,
       "gain_date": "2026-05-29",
       "max_1d_drop_pct": -26.95,
       "drop_date": "2026-10-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 102.25
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 92.9
     },
     "NRG": {
       "max_1d_gain_pct": 10.32,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -15.48,
       "drop_date": "2026-08-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 97.1
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 91.76
     },
     "NTR": {
       "max_1d_gain_pct": 7.94,
       "gain_date": "2026-01-14",
       "max_1d_drop_pct": -7.36,
       "drop_date": "2026-05-07",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 71.24
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 69.22
     },
     "NU": {
       "max_1d_gain_pct": 13.03,
       "gain_date": "2026-10-05",
       "max_1d_drop_pct": -16.95,
       "drop_date": "2026-10-26",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 13.22
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 12.33
     },
     "NVAX": {
       "max_1d_gain_pct": 20.73,
       "gain_date": "2026-01-21",
       "max_1d_drop_pct": -12.22,
       "drop_date": "2026-11-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 8.53
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 7.96
     },
     "NVDA": {
       "max_1d_gain_pct": 8.74,
       "gain_date": "2026-08-27",
       "max_1d_drop_pct": -9.26,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 162.85
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 155.46
     },
     "NVO": {
       "max_1d_gain_pct": 9.92,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -16.43,
       "drop_date": "2026-02-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 41.63
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 40.7
     },
     "NVT": {
       "max_1d_gain_pct": 11.21,
       "gain_date": "2026-05-01",
       "max_1d_drop_pct": -12.8,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 114.69
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 109.19
     },
     "NXPI": {
       "max_1d_gain_pct": 25.55,
       "gain_date": "2026-04-29",
       "max_1d_drop_pct": -8.15,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 265.09
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 252.51
     },
     "OKLO": {
       "max_1d_gain_pct": 22.66,
       "gain_date": "2026-11-06",
       "max_1d_drop_pct": -15.13,
       "drop_date": "2025-12-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 23.92
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 22.37
     },
     "OKTA": {
       "max_1d_gain_pct": 30.14,
       "gain_date": "2026-05-29",
       "max_1d_drop_pct": -11.22,
       "drop_date": "2026-11-02",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 182.87
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 174.54
     },
     "ON": {
       "max_1d_gain_pct": 11.25,
       "gain_date": "2026-03-31",
       "max_1d_drop_pct": -23.66,
       "drop_date": "2026-06-26",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 71.06
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 67.93
     },
     "ONDS": {
       "max_1d_gain_pct": 29.47,
       "gain_date": "2025-11-24",
       "max_1d_drop_pct": -16.4,
       "drop_date": "2025-11-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 5.16
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 4.39
     },
     "ONON": {
       "max_1d_gain_pct": 7.58,
       "gain_date": "2026-09-22",
       "max_1d_drop_pct": -20.29,
       "drop_date": "2026-08-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 33.63
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 31.85
     },
     "ONTO": {
       "max_1d_gain_pct": 14.75,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -15.6,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 203.62
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 199.57
     },
     "OPEN": {
       "max_1d_gain_pct": 16.58,
       "gain_date": "2026-10-15",
       "max_1d_drop_pct": -21.79,
       "drop_date": "2026-11-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 1.19
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 1.18
     },
     "OR": {
       "max_1d_gain_pct": 8.03,
       "gain_date": "2026-03-31",
       "max_1d_drop_pct": -13.72,
       "drop_date": "2026-01-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 34.89
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 34.41
     },
     "ORCL": {
       "max_1d_gain_pct": 12.69,
       "gain_date": "2026-04-13",
       "max_1d_drop_pct": -10.83,
       "drop_date": "2025-12-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 125.35
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 115.0
     },
     "OSCR": {
       "max_1d_gain_pct": 22.33,
       "gain_date": "2025-11-24",
       "max_1d_drop_pct": -11.86,
       "drop_date": "2026-08-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 31.05
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 29.84
     },
     "OUST": {
       "max_1d_gain_pct": 28.68,
       "gain_date": "2026-06-29",
       "max_1d_drop_pct": -16.96,
       "drop_date": "2026-07-02",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 33.48
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 30.48
     },
     "OWL": {
       "max_1d_gain_pct": 9.8,
       "gain_date": "2026-04-30",
       "max_1d_drop_pct": -9.76,
       "drop_date": "2026-02-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 9.75
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 9.28
     },
     "OXY": {
       "max_1d_gain_pct": 9.38,
       "gain_date": "2026-02-19",
       "max_1d_drop_pct": -7.11,
       "drop_date": "2026-05-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 58.75
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 56.52
     },
     "PALL": {
       "max_1d_gain_pct": 12.4,
       "gain_date": "2025-12-26",
       "max_1d_drop_pct": -15.68,
       "drop_date": "2026-01-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 18.13
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 17.58
     },
     "PANW": {
       "max_1d_gain_pct": 13.09,
       "gain_date": "2026-09-14",
       "max_1d_drop_pct": -9.59,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 322.24
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 309.29
     },
     "PAYC": {
       "max_1d_gain_pct": 23.55,
       "gain_date": "2026-08-06",
       "max_1d_drop_pct": -6.76,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 248.86
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 247.9
     },
     "PBW": {
       "max_1d_gain_pct": 7.37,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -10.8,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 25.02
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 23.04
     },
     "PDD": {
       "max_1d_gain_pct": 8.18,
       "gain_date": "2026-07-01",
       "max_1d_drop_pct": -10.38,
       "drop_date": "2026-05-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 78.97
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 77.39
     },
     "PEJ": {
       "max_1d_gain_pct": 4.07,
       "gain_date": "2026-04-08",
       "max_1d_drop_pct": -4.23,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 67.24
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 66.68
     },
     "PENN": {
       "max_1d_gain_pct": 16.86,
       "gain_date": "2026-04-23",
       "max_1d_drop_pct": -7.11,
       "drop_date": "2026-02-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 17.5
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 18.13
     },
     "PEP": {
       "max_1d_gain_pct": 4.93,
       "gain_date": "2026-02-03",
       "max_1d_drop_pct": -3.37,
       "drop_date": "2026-05-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 145.44
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 142.02
     },
     "PFE": {
       "max_1d_gain_pct": 3.92,
       "gain_date": "2026-02-04",
       "max_1d_drop_pct": -3.41,
       "drop_date": "2025-12-16",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 28.89
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 28.47
     },
     "PG": {
       "max_1d_gain_pct": 5.58,
       "gain_date": "2026-10-22",
       "max_1d_drop_pct": -3.56,
       "drop_date": "2025-12-08",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 169.8
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 171.72
     },
     "PH": {
       "max_1d_gain_pct": 7.31,
       "gain_date": "2026-08-06",
       "max_1d_drop_pct": -6.78,
       "drop_date": "2026-10-22",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 955.68
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 920.84
     },
     "PICK": {
       "max_1d_gain_pct": 5.7,
       "gain_date": "2026-06-11",
       "max_1d_drop_pct": -7.32,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 53.9
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 51.22
     },
     "PINS": {
       "max_1d_gain_pct": 9.27,
       "gain_date": "2026-03-03",
       "max_1d_drop_pct": -16.83,
       "drop_date": "2026-02-13",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 19.15
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 18.07
     },
     "PL": {
       "max_1d_gain_pct": 35.01,
       "gain_date": "2025-12-11",
       "max_1d_drop_pct": -25.98,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 13.81
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 12.49
     },
     "PLAB": {
       "max_1d_gain_pct": 45.39,
       "gain_date": "2025-12-10",
       "max_1d_drop_pct": -36.42,
       "drop_date": "2026-05-28",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 27.55
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 26.19
     },
     "PLTM": {
       "max_1d_gain_pct": 8.47,
       "gain_date": "2025-12-23",
       "max_1d_drop_pct": -19.02,
       "drop_date": "2026-01-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 14.28
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 13.61
     },
     "PLTR": {
       "max_1d_gain_pct": 29.45,
       "gain_date": "2026-08-04",
       "max_1d_drop_pct": -11.62,
       "drop_date": "2026-02-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 167.99
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 156.56
     },
     "POOL": {
       "max_1d_gain_pct": 14.36,
       "gain_date": "2026-10-22",
       "max_1d_drop_pct": -14.48,
       "drop_date": "2026-02-19",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 216.2
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 207.33
     },
     "POWI": {
       "max_1d_gain_pct": 18.69,
       "gain_date": "2026-05-26",
       "max_1d_drop_pct": -17.01,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 44.18
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 42.55
     },
     "POWL": {
       "max_1d_gain_pct": 16.34,
       "gain_date": "2026-02-04",
       "max_1d_drop_pct": -12.61,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 142.72
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 150.86
     },
     "PRU": {
       "max_1d_gain_pct": 6.58,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -5.99,
       "drop_date": "2026-04-21",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 123.55
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 122.34
     },
     "PSN": {
       "max_1d_gain_pct": 8.27,
       "gain_date": "2026-06-26",
       "max_1d_drop_pct": -35.0,
       "drop_date": "2026-07-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 49.72
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 50.64
     },
     "PTON": {
       "max_1d_gain_pct": 10.23,
       "gain_date": "2026-05-22",
       "max_1d_drop_pct": -25.72,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 5.7
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 5.19
     },
     "PWR": {
       "max_1d_gain_pct": 17.26,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -12.3,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 602.01
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 598.53
     },
     "PYPL": {
       "max_1d_gain_pct": 17.2,
       "gain_date": "2026-07-15",
       "max_1d_drop_pct": -20.31,
       "drop_date": "2026-02-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 59.28
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 58.11
     },
     "PZZA": {
       "max_1d_gain_pct": 19.42,
       "gain_date": "2026-03-11",
       "max_1d_drop_pct": -17.18,
       "drop_date": "2026-08-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 19.92
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 19.13
     },
     "Q": {
       "max_1d_gain_pct": 9.87,
       "gain_date": "2026-05-12",
       "max_1d_drop_pct": -9.48,
       "drop_date": "2026-10-22",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 118.36
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 114.49
     },
     "QBTS": {
       "max_1d_gain_pct": 33.37,
       "gain_date": "2026-05-21",
       "max_1d_drop_pct": -14.42,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 9.56
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 8.08
     },
     "QCOM": {
       "max_1d_gain_pct": 15.12,
       "gain_date": "2026-04-30",
       "max_1d_drop_pct": -11.46,
       "drop_date": "2026-05-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 172.47
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 166.67
     },
     "QLYS": {
       "max_1d_gain_pct": 15.06,
       "gain_date": "2026-09-14",
       "max_1d_drop_pct": -13.51,
       "drop_date": "2026-11-10",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 172.94
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 174.67
     },
     "QNT": {
       "max_1d_gain_pct": 27.97,
       "gain_date": "2026-08-12",
       "max_1d_drop_pct": -10.4,
       "drop_date": "2026-10-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 35.4
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 33.03
     },
     "QQQ": {
       "max_1d_gain_pct": 3.54,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -6.49,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 679.89
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 656.95
     },
     "QRVO": {
       "max_1d_gain_pct": 11.69,
@@ -3168,180 +3168,180 @@
       "gain_date": "2026-06-18",
       "max_1d_drop_pct": -15.53,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 3.68
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 3.28
     },
     "QTUM": {
       "max_1d_gain_pct": 6.1,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -8.62,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 130.1
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 122.42
     },
     "QUBT": {
       "max_1d_gain_pct": 20.74,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -14.46,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 5.56
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 5.13
     },
     "RBLX": {
       "max_1d_gain_pct": 14.26,
       "gain_date": "2026-06-29",
       "max_1d_drop_pct": -26.85,
       "drop_date": "2026-07-31",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 49.91
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 44.0
     },
     "RBRK": {
       "max_1d_gain_pct": 22.49,
       "gain_date": "2025-12-05",
       "max_1d_drop_pct": -13.05,
       "drop_date": "2026-08-28",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 109.88
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 100.68
     },
     "RCL": {
       "max_1d_gain_pct": 18.65,
       "gain_date": "2026-01-29",
       "max_1d_drop_pct": -6.99,
       "drop_date": "2026-03-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 323.27
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 307.39
     },
     "RDDT": {
       "max_1d_gain_pct": 13.93,
       "gain_date": "2026-07-01",
       "max_1d_drop_pct": -29.22,
       "drop_date": "2026-10-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 98.45
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 94.48
     },
     "RDW": {
       "max_1d_gain_pct": 29.56,
       "gain_date": "2026-01-27",
       "max_1d_drop_pct": -19.82,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 7.73
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 6.78
     },
     "REGN": {
       "max_1d_gain_pct": 13.33,
       "gain_date": "2026-10-30",
       "max_1d_drop_pct": -9.82,
       "drop_date": "2026-05-18",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 955.47
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 957.76
     },
     "REMX": {
       "max_1d_gain_pct": 9.2,
       "gain_date": "2026-06-11",
       "max_1d_drop_pct": -8.67,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 50.02
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 45.95
     },
     "RGEN": {
       "max_1d_gain_pct": 10.9,
       "gain_date": "2026-07-28",
       "max_1d_drop_pct": -8.31,
       "drop_date": "2026-04-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 167.79
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 162.18
     },
     "RGTI": {
       "max_1d_gain_pct": 30.57,
       "gain_date": "2026-05-21",
       "max_1d_drop_pct": -14.4,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 9.62
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 8.46
     },
     "RIOT": {
       "max_1d_gain_pct": 21.27,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -14.71,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 17.52
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 17.05
     },
     "RIVN": {
       "max_1d_gain_pct": 26.64,
       "gain_date": "2026-02-13",
       "max_1d_drop_pct": -18.12,
       "drop_date": "2026-07-07",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 12.18
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 11.88
     },
     "RKLB": {
       "max_1d_gain_pct": 34.22,
       "gain_date": "2026-05-08",
       "max_1d_drop_pct": -14.7,
       "drop_date": "2026-06-01",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 61.53
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 55.05
     },
     "RKT": {
       "max_1d_gain_pct": 10.88,
       "gain_date": "2026-05-08",
       "max_1d_drop_pct": -13.67,
       "drop_date": "2026-01-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 13.71
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 13.26
     },
     "RL": {
       "max_1d_gain_pct": 13.87,
       "gain_date": "2026-05-21",
       "max_1d_drop_pct": -7.35,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 386.3
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 378.14
     },
     "RMBS": {
       "max_1d_gain_pct": 14.38,
       "gain_date": "2026-01-21",
       "max_1d_drop_pct": -21.26,
       "drop_date": "2026-04-28",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 82.23
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 78.72
     },
     "RNG": {
       "max_1d_gain_pct": 34.4,
       "gain_date": "2026-02-20",
       "max_1d_drop_pct": -12.46,
       "drop_date": "2026-02-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 75.39
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 72.03
     },
     "ROK": {
       "max_1d_gain_pct": 8.9,
       "gain_date": "2026-05-05",
       "max_1d_drop_pct": -14.15,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 402.46
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 391.26
     },
     "ROKU": {
       "max_1d_gain_pct": 20.08,
@@ -3357,324 +3357,324 @@
       "gain_date": "2026-04-08",
       "max_1d_drop_pct": -2.89,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 221.16
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 215.76
     },
     "RTX": {
       "max_1d_gain_pct": 7.33,
       "gain_date": "2026-07-23",
       "max_1d_drop_pct": -4.4,
       "drop_date": "2026-04-21",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 198.58
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 198.0
     },
     "RUN": {
       "max_1d_gain_pct": 12.57,
       "gain_date": "2026-06-24",
       "max_1d_drop_pct": -35.11,
       "drop_date": "2026-02-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 8.63
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 7.72
     },
     "S": {
       "max_1d_gain_pct": 14.48,
       "gain_date": "2026-09-14",
       "max_1d_drop_pct": -14.44,
       "drop_date": "2025-12-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 22.2
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 21.15
     },
     "SANM": {
       "max_1d_gain_pct": 14.56,
       "gain_date": "2026-04-28",
       "max_1d_drop_pct": -21.56,
       "drop_date": "2026-01-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 158.31
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 152.67
     },
     "SBUX": {
       "max_1d_gain_pct": 8.45,
       "gain_date": "2026-04-29",
       "max_1d_drop_pct": -5.03,
       "drop_date": "2026-03-18",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 106.44
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 107.49
     },
     "SCCO": {
       "max_1d_gain_pct": 11.74,
       "gain_date": "2026-02-03",
       "max_1d_drop_pct": -10.88,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 164.08
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 155.42
     },
     "SCHW": {
       "max_1d_gain_pct": 4.58,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -7.63,
       "drop_date": "2026-04-16",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 92.98
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 91.84
     },
     "SE": {
       "max_1d_gain_pct": 14.56,
       "gain_date": "2026-08-11",
       "max_1d_drop_pct": -16.53,
       "drop_date": "2026-03-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 75.36
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 69.44
     },
     "SEDG": {
       "max_1d_gain_pct": 22.93,
       "gain_date": "2026-05-15",
       "max_1d_drop_pct": -30.48,
       "drop_date": "2026-08-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 23.85
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 21.72
     },
     "SHLD": {
       "max_1d_gain_pct": 5.27,
       "gain_date": "2026-01-05",
       "max_1d_drop_pct": -5.12,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 59.8
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 58.44
     },
     "SHOP": {
       "max_1d_gain_pct": 16.98,
       "gain_date": "2026-08-05",
       "max_1d_drop_pct": -15.62,
       "drop_date": "2026-05-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 147.09
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 141.9
     },
     "SIL": {
       "max_1d_gain_pct": 9.61,
       "gain_date": "2026-05-06",
       "max_1d_drop_pct": -14.78,
       "drop_date": "2026-01-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 73.76
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 70.83
     },
     "SIMO": {
       "max_1d_gain_pct": 45.8,
       "gain_date": "2026-04-29",
       "max_1d_drop_pct": -16.76,
       "drop_date": "2026-09-14",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 169.45
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 152.04
     },
     "SKHY": {
       "max_1d_gain_pct": 27.29,
       "gain_date": "2026-07-14",
       "max_1d_drop_pct": -13.69,
       "drop_date": "2026-07-16",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 131.79
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 122.61
     },
     "SLV": {
       "max_1d_gain_pct": 9.05,
       "gain_date": "2025-12-26",
       "max_1d_drop_pct": -28.54,
       "drop_date": "2026-01-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 44.13
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 42.64
     },
     "SLX": {
       "max_1d_gain_pct": 5.43,
       "gain_date": "2026-04-08",
       "max_1d_drop_pct": -4.87,
       "drop_date": "2026-03-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 97.28
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 93.76
     },
     "SMCI": {
       "max_1d_gain_pct": 24.54,
       "gain_date": "2026-05-06",
       "max_1d_drop_pct": -33.32,
       "drop_date": "2026-03-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 26.87
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 24.14
     },
     "SMH": {
       "max_1d_gain_pct": 6.88,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -11.21,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 486.75
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 460.1
     },
     "SMR": {
       "max_1d_gain_pct": 18.13,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -15.67,
       "drop_date": "2026-09-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 4.66
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 4.09
     },
     "SMTC": {
       "max_1d_gain_pct": 12.83,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -17.5,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 114.59
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 106.77
     },
     "SNAP": {
       "max_1d_gain_pct": 14.88,
       "gain_date": "2026-08-04",
       "max_1d_drop_pct": -14.02,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 5.26
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 5.5
     },
     "SNDK": {
       "max_1d_gain_pct": 27.56,
       "gain_date": "2026-01-06",
       "max_1d_drop_pct": -22.26,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 885.01
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 797.24
     },
     "SNOW": {
       "max_1d_gain_pct": 36.48,
       "gain_date": "2026-05-28",
       "max_1d_drop_pct": -11.83,
       "drop_date": "2026-04-09",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 291.0
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 272.94
     },
     "SNPS": {
       "max_1d_gain_pct": 13.39,
       "gain_date": "2026-08-27",
       "max_1d_drop_pct": -8.61,
       "drop_date": "2026-05-28",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 455.2
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 435.51
     },
     "SO": {
       "max_1d_gain_pct": 4.4,
       "gain_date": "2026-02-19",
       "max_1d_drop_pct": -3.28,
       "drop_date": "2026-06-01",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 93.59
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 93.6
     },
     "SOFI": {
       "max_1d_gain_pct": 13.42,
       "gain_date": "2026-10-27",
       "max_1d_drop_pct": -15.44,
       "drop_date": "2026-04-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 15.42
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 14.28
     },
     "SOLS": {
       "max_1d_gain_pct": 17.48,
       "gain_date": "2026-02-11",
       "max_1d_drop_pct": -15.14,
       "drop_date": "2026-07-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 66.12
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 63.83
     },
     "SOLT": {
       "max_1d_gain_pct": 27.6,
       "gain_date": "2026-02-25",
       "max_1d_drop_pct": -30.93,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 32.98
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 27.13
     },
     "SONY": {
       "max_1d_gain_pct": 6.24,
       "gain_date": "2026-07-27",
       "max_1d_drop_pct": -4.89,
       "drop_date": "2026-03-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 27.07
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 26.68
     },
     "SOXX": {
       "max_1d_gain_pct": 8.5,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -12.15,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 149.3
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 141.46
     },
     "SPCX": {
       "max_1d_gain_pct": 19.6,
       "gain_date": "2026-06-15",
       "max_1d_drop_pct": -16.43,
       "drop_date": "2026-06-22",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 139.11
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 141.7
     },
     "SPGI": {
       "max_1d_gain_pct": 7.7,
       "gain_date": "2026-07-01",
       "max_1d_drop_pct": -11.27,
       "drop_date": "2026-02-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 473.59
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 452.35
     },
     "SPHB": {
       "max_1d_gain_pct": 5.53,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -8.11,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 133.54
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 127.37
     },
     "SPMO": {
       "max_1d_gain_pct": 5.17,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -7.26,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 132.31
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 127.29
     },
     "SPOT": {
       "max_1d_gain_pct": 14.75,
       "gain_date": "2026-02-10",
       "max_1d_drop_pct": -12.43,
       "drop_date": "2026-04-28",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 612.63
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 602.01
     },
     "SPWR": {
       "max_1d_gain_pct": 58.27,
@@ -3690,819 +3690,819 @@
       "gain_date": "2026-03-31",
       "max_1d_drop_pct": -4.41,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 754.37
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 732.44
     },
     "STM": {
       "max_1d_gain_pct": 15.2,
       "gain_date": "2026-06-02",
       "max_1d_drop_pct": -18.67,
       "drop_date": "2026-07-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 46.73
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 44.22
     },
     "STX": {
       "max_1d_gain_pct": 19.14,
       "gain_date": "2026-01-28",
       "max_1d_drop_pct": -16.25,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 528.29
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 504.4
     },
     "SWKS": {
       "max_1d_gain_pct": 13.55,
       "gain_date": "2026-09-15",
       "max_1d_drop_pct": -10.46,
       "drop_date": "2026-05-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 89.94
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 85.93
     },
     "TAN": {
       "max_1d_gain_pct": 5.65,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -9.07,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 41.65
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 38.12
     },
     "TDOC": {
       "max_1d_gain_pct": 26.89,
       "gain_date": "2026-10-29",
       "max_1d_drop_pct": -28.32,
       "drop_date": "2026-07-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 8.8
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 8.49
     },
     "TEAM": {
       "max_1d_gain_pct": 35.31,
       "gain_date": "2026-08-07",
       "max_1d_drop_pct": -16.15,
       "drop_date": "2026-11-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 149.99
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 140.98
     },
     "TEM": {
       "max_1d_gain_pct": 24.09,
       "gain_date": "2026-08-19",
       "max_1d_drop_pct": -13.85,
       "drop_date": "2026-10-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 71.6
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 63.43
     },
     "TENB": {
       "max_1d_gain_pct": 16.51,
       "gain_date": "2026-09-14",
       "max_1d_drop_pct": -11.85,
       "drop_date": "2026-02-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 40.76
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 38.6
     },
     "TER": {
       "max_1d_gain_pct": 14.43,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -19.41,
       "drop_date": "2026-04-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 249.55
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 234.18
     },
     "TGT": {
       "max_1d_gain_pct": 6.74,
       "gain_date": "2026-03-03",
       "max_1d_drop_pct": -5.44,
       "drop_date": "2026-05-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 161.45
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 159.53
     },
     "TIGR": {
       "max_1d_gain_pct": 14.91,
       "gain_date": "2026-05-26",
       "max_1d_drop_pct": -25.34,
       "drop_date": "2026-05-22",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 4.14
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 3.78
     },
     "TLT": {
       "max_1d_gain_pct": 1.87,
       "gain_date": "2026-10-22",
       "max_1d_drop_pct": -1.9,
       "drop_date": "2026-03-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 79.38
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 79.55
     },
     "TMO": {
       "max_1d_gain_pct": 8.71,
       "gain_date": "2026-07-23",
       "max_1d_drop_pct": -9.2,
       "drop_date": "2026-04-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 700.22
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 686.79
     },
     "TQQQ": {
       "max_1d_gain_pct": 10.2,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -18.91,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 57.68
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 51.81
     },
     "TRIP": {
       "max_1d_gain_pct": 9.68,
       "gain_date": "2026-02-17",
       "max_1d_drop_pct": -27.65,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 7.24
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 7.03
     },
     "TRMB": {
       "max_1d_gain_pct": 5.41,
       "gain_date": "2026-07-27",
       "max_1d_drop_pct": -17.31,
       "drop_date": "2026-11-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 55.64
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 53.62
     },
     "TRV": {
       "max_1d_gain_pct": 9.22,
       "gain_date": "2026-07-17",
       "max_1d_drop_pct": -3.35,
       "drop_date": "2026-07-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 403.23
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 397.58
     },
     "TSEM": {
       "max_1d_gain_pct": 22.61,
       "gain_date": "2026-05-13",
       "max_1d_drop_pct": -11.97,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 146.89
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 136.06
     },
     "TSLA": {
       "max_1d_gain_pct": 8.46,
       "gain_date": "2026-06-29",
       "max_1d_drop_pct": -14.52,
       "drop_date": "2026-07-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 390.22
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 380.11
     },
     "TSM": {
       "max_1d_gain_pct": 7.64,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -10.78,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 398.73
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 359.69
     },
     "TTD": {
       "max_1d_gain_pct": 18.36,
       "gain_date": "2026-03-05",
       "max_1d_drop_pct": -21.9,
       "drop_date": "2026-08-07",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 15.68
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 14.93
     },
     "TTMI": {
       "max_1d_gain_pct": 19.71,
       "gain_date": "2026-01-13",
       "max_1d_drop_pct": -27.67,
       "drop_date": "2026-10-22",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 74.08
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 66.74
     },
     "TWLO": {
       "max_1d_gain_pct": 24.89,
       "gain_date": "2026-08-07",
       "max_1d_drop_pct": -15.24,
       "drop_date": "2026-10-30",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 211.21
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 194.13
     },
     "TWST": {
       "max_1d_gain_pct": 22.64,
       "gain_date": "2026-08-19",
       "max_1d_drop_pct": -18.55,
       "drop_date": "2026-10-06",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 111.6
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 112.0
     },
     "TXN": {
       "max_1d_gain_pct": 19.43,
       "gain_date": "2026-04-23",
       "max_1d_drop_pct": -10.7,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 303.6
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 295.86
     },
     "U": {
       "max_1d_gain_pct": 15.05,
       "gain_date": "2026-08-06",
       "max_1d_drop_pct": -26.32,
       "drop_date": "2026-02-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 52.81
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 50.36
     },
     "UAL": {
       "max_1d_gain_pct": 9.99,
       "gain_date": "2026-05-20",
       "max_1d_drop_pct": -8.7,
       "drop_date": "2026-02-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 109.31
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 106.35
     },
     "UBER": {
       "max_1d_gain_pct": 8.53,
       "gain_date": "2026-05-06",
       "max_1d_drop_pct": -6.89,
       "drop_date": "2025-11-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 69.69
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 68.81
     },
     "UBS": {
       "max_1d_gain_pct": 6.54,
       "gain_date": "2026-03-31",
       "max_1d_drop_pct": -5.92,
       "drop_date": "2026-02-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 48.31
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 46.56
     },
     "UFO": {
       "max_1d_gain_pct": 8.9,
       "gain_date": "2026-06-11",
       "max_1d_drop_pct": -7.8,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 40.69
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 39.3
     },
     "UMC": {
       "max_1d_gain_pct": 15.91,
       "gain_date": "2026-01-20",
       "max_1d_drop_pct": -16.69,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 15.4
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 14.14
     },
     "UNH": {
       "max_1d_gain_pct": 9.37,
       "gain_date": "2026-04-07",
       "max_1d_drop_pct": -19.61,
       "drop_date": "2026-01-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 407.46
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 389.68
     },
     "UNP": {
       "max_1d_gain_pct": 8.77,
       "gain_date": "2026-04-23",
       "max_1d_drop_pct": -4.43,
       "drop_date": "2026-05-28",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 302.44
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 297.03
     },
     "UPS": {
       "max_1d_gain_pct": 5.75,
       "gain_date": "2026-10-27",
       "max_1d_drop_pct": -10.47,
       "drop_date": "2026-05-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 112.4
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 110.31
     },
     "UPST": {
       "max_1d_gain_pct": 12.97,
       "gain_date": "2026-04-15",
       "max_1d_drop_pct": -15.04,
       "drop_date": "2026-02-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 19.56
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 18.13
     },
     "URA": {
       "max_1d_gain_pct": 7.79,
       "gain_date": "2026-01-02",
       "max_1d_drop_pct": -9.88,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 31.84
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 30.04
     },
     "USAR": {
       "max_1d_gain_pct": 24.68,
       "gain_date": "2025-12-04",
       "max_1d_drop_pct": -17.08,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 8.16
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 6.635
     },
     "USO": {
       "max_1d_gain_pct": 12.94,
       "gain_date": "2026-03-06",
       "max_1d_drop_pct": -9.78,
       "drop_date": "2026-04-08",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 145.58
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 140.24
     },
     "V": {
       "max_1d_gain_pct": 8.26,
       "gain_date": "2026-04-29",
       "max_1d_drop_pct": -4.5,
       "drop_date": "2026-02-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 425.76
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 416.77
     },
     "VEEV": {
       "max_1d_gain_pct": 15.2,
       "gain_date": "2026-08-27",
       "max_1d_drop_pct": -9.77,
       "drop_date": "2025-11-21",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 301.53
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 288.41
     },
     "VICR": {
       "max_1d_gain_pct": 24.24,
       "gain_date": "2026-05-26",
       "max_1d_drop_pct": -19.21,
       "drop_date": "2026-07-02",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 159.05
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 144.97
     },
     "VLO": {
       "max_1d_gain_pct": 9.23,
       "gain_date": "2026-01-05",
       "max_1d_drop_pct": -9.24,
       "drop_date": "2026-10-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 379.83
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 363.77
     },
     "VPG": {
       "max_1d_gain_pct": 28.48,
       "gain_date": "2026-05-12",
       "max_1d_drop_pct": -27.17,
       "drop_date": "2026-08-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 50.9
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 48.54
     },
     "VRT": {
       "max_1d_gain_pct": 24.49,
       "gain_date": "2026-02-11",
       "max_1d_drop_pct": -17.26,
       "drop_date": "2026-07-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 202.07
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 190.37
     },
     "VRTX": {
       "max_1d_gain_pct": 8.31,
       "gain_date": "2026-03-10",
       "max_1d_drop_pct": -4.56,
       "drop_date": "2026-07-08",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 538.6
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 534.2
     },
     "VST": {
       "max_1d_gain_pct": 10.77,
       "gain_date": "2026-10-06",
       "max_1d_drop_pct": -13.83,
       "drop_date": "2026-11-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 133.01
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 127.15
     },
     "VSXY": {
       "max_1d_gain_pct": 47.44,
       "gain_date": "2026-06-02",
       "max_1d_drop_pct": -13.17,
       "drop_date": "2026-09-03",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 106.17
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 98.7
     },
     "VTV": {
       "max_1d_gain_pct": 2.23,
       "gain_date": "2026-04-08",
       "max_1d_drop_pct": -3.07,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 229.51
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 223.9
     },
     "VUG": {
       "max_1d_gain_pct": 4.0,
       "gain_date": "2026-03-31",
       "max_1d_drop_pct": -5.47,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 84.23
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 81.44
     },
     "VZ": {
       "max_1d_gain_pct": 11.83,
       "gain_date": "2026-01-30",
       "max_1d_drop_pct": -8.75,
       "drop_date": "2026-10-09",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 46.36
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 45.93
     },
     "WDAY": {
       "max_1d_gain_pct": 17.78,
       "gain_date": "2026-08-13",
       "max_1d_drop_pct": -9.42,
       "drop_date": "2026-04-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 196.45
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 182.8
     },
     "WDC": {
       "max_1d_gain_pct": 16.77,
       "gain_date": "2026-01-06",
       "max_1d_drop_pct": -17.35,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 295.65
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 283.33
     },
     "WEN": {
       "max_1d_gain_pct": 25.56,
       "gain_date": "2026-06-24",
       "max_1d_drop_pct": -13.5,
       "drop_date": "2026-08-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 8.28
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 8.7
     },
     "WFC": {
       "max_1d_gain_pct": 3.99,
       "gain_date": "2026-07-01",
       "max_1d_drop_pct": -5.7,
       "drop_date": "2026-04-14",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 86.05
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 82.69
     },
     "WGMI": {
       "max_1d_gain_pct": 22.1,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -13.31,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 26.25
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 24.19
     },
     "WM": {
       "max_1d_gain_pct": 4.15,
       "gain_date": "2026-10-22",
       "max_1d_drop_pct": -4.52,
       "drop_date": "2026-10-28",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 243.83
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 242.69
     },
     "WMB": {
       "max_1d_gain_pct": 4.68,
       "gain_date": "2026-08-26",
       "max_1d_drop_pct": -6.36,
       "drop_date": "2026-11-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 69.09
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 67.46
     },
     "WMT": {
       "max_1d_gain_pct": 6.46,
       "gain_date": "2025-11-20",
       "max_1d_drop_pct": -9.15,
       "drop_date": "2026-08-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 128.09
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 127.52
     },
     "WOLF": {
       "max_1d_gain_pct": 24.48,
       "gain_date": "2026-05-01",
       "max_1d_drop_pct": -17.89,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 24.83
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 23.15
     },
     "WULF": {
       "max_1d_gain_pct": 19.88,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -14.12,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 12.62
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 11.67
     },
     "XAR": {
       "max_1d_gain_pct": 6.62,
       "gain_date": "2026-06-11",
       "max_1d_drop_pct": -5.08,
       "drop_date": "2026-07-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 230.69
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 220.15
     },
     "XBI": {
       "max_1d_gain_pct": 7.53,
       "gain_date": "2026-03-31",
       "max_1d_drop_pct": -6.73,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 150.55
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 145.28
     },
     "XEL": {
       "max_1d_gain_pct": 5.24,
       "gain_date": "2026-04-30",
       "max_1d_drop_pct": -3.89,
       "drop_date": "2026-06-01",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 81.61
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 80.72
     },
     "XHB": {
       "max_1d_gain_pct": 5.62,
       "gain_date": "2026-06-24",
       "max_1d_drop_pct": -4.52,
       "drop_date": "2026-07-29",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 102.07
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 99.09
     },
     "XLB": {
       "max_1d_gain_pct": 3.33,
       "gain_date": "2026-04-08",
       "max_1d_drop_pct": -2.91,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 52.23
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 50.84
     },
     "XLC": {
       "max_1d_gain_pct": 3.9,
       "gain_date": "2026-09-21",
       "max_1d_drop_pct": -3.5,
       "drop_date": "2026-07-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 108.69
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 105.26
     },
     "XLE": {
       "max_1d_gain_pct": 4.66,
       "gain_date": "2026-08-10",
       "max_1d_drop_pct": -4.74,
       "drop_date": "2026-11-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 64.96
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 63.36
     },
     "XLF": {
       "max_1d_gain_pct": 3.51,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -3.35,
       "drop_date": "2026-02-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 58.68
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 57.07
     },
     "XLI": {
       "max_1d_gain_pct": 3.82,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -4.12,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 168.78
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 164.75
     },
     "XLK": {
       "max_1d_gain_pct": 5.5,
       "gain_date": "2026-07-30",
       "max_1d_drop_pct": -8.0,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 170.28
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 163.26
     },
     "XLP": {
       "max_1d_gain_pct": 3.36,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -2.43,
       "drop_date": "2026-03-18",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 92.35
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 91.46
     },
     "XLRE": {
       "max_1d_gain_pct": 3.32,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -3.17,
       "drop_date": "2026-03-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 44.37
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 43.59
     },
     "XLU": {
       "max_1d_gain_pct": 2.98,
       "gain_date": "2026-10-06",
       "max_1d_drop_pct": -4.06,
       "drop_date": "2026-03-20",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 44.04
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 43.42
     },
     "XLV": {
       "max_1d_gain_pct": 3.51,
       "gain_date": "2026-08-19",
       "max_1d_drop_pct": -2.52,
       "drop_date": "2026-09-08",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 188.85
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 185.24
     },
     "XLY": {
       "max_1d_gain_pct": 4.26,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -4.61,
       "drop_date": "2026-07-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 119.98
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 117.1
     },
     "XMAG": {
       "max_1d_gain_pct": 2.98,
       "gain_date": "2026-11-09",
       "max_1d_drop_pct": -4.29,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 25.82
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 25.08
     },
     "XME": {
       "max_1d_gain_pct": 5.91,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -7.81,
       "drop_date": "2026-06-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 93.74
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 89.19
     },
     "XOM": {
       "max_1d_gain_pct": 4.41,
       "gain_date": "2026-08-10",
       "max_1d_drop_pct": -5.23,
       "drop_date": "2026-04-01",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 170.59
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 167.21
     },
     "XOP": {
       "max_1d_gain_pct": 5.73,
       "gain_date": "2026-08-10",
       "max_1d_drop_pct": -6.39,
       "drop_date": "2026-11-04",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 184.8
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 177.61
     },
     "XPEV": {
       "max_1d_gain_pct": 8.44,
       "gain_date": "2026-01-12",
       "max_1d_drop_pct": -8.53,
       "drop_date": "2026-08-24",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 9.37
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 9.99
     },
     "XRT": {
       "max_1d_gain_pct": 5.54,
       "gain_date": "2026-11-04",
       "max_1d_drop_pct": -3.61,
       "drop_date": "2026-05-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 91.05
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 88.29
     },
     "XTL": {
       "max_1d_gain_pct": 5.96,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -7.84,
       "drop_date": "2026-11-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 183.57
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 177.77
     },
     "XXRP": {
       "max_1d_gain_pct": 43.66,
       "gain_date": "2026-02-06",
       "max_1d_drop_pct": -45.23,
       "drop_date": "2026-02-05",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 15.34
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 13.56
     },
     "XYZ": {
       "max_1d_gain_pct": 16.82,
       "gain_date": "2026-02-27",
       "max_1d_drop_pct": -8.77,
       "drop_date": "2026-02-12",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 84.58
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 79.31
     },
     "Z": {
       "max_1d_gain_pct": 11.05,
       "gain_date": "2026-10-15",
       "max_1d_drop_pct": -16.54,
       "drop_date": "2026-02-11",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 29.8
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 28.26
     },
     "ZBRA": {
       "max_1d_gain_pct": 26.47,
       "gain_date": "2026-08-04",
       "max_1d_drop_pct": -9.43,
       "drop_date": "2026-02-23",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 324.0
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 312.21
     },
     "ZETA": {
       "max_1d_gain_pct": 13.43,
       "gain_date": "2026-05-29",
       "max_1d_drop_pct": -9.51,
       "drop_date": "2026-03-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 36.65
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 33.54
     },
     "ZIM": {
       "max_1d_gain_pct": 25.45,
       "gain_date": "2026-02-17",
       "max_1d_drop_pct": -7.31,
       "drop_date": "2026-01-13",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 29.34
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 29.69
     },
     "ZM": {
       "max_1d_gain_pct": 11.28,
       "gain_date": "2026-01-26",
       "max_1d_drop_pct": -11.58,
       "drop_date": "2026-02-26",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 99.8
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 91.52
     },
     "ZS": {
       "max_1d_gain_pct": 16.52,
       "gain_date": "2026-09-14",
       "max_1d_drop_pct": -31.52,
       "drop_date": "2026-05-27",
-      "window_start": "2025-11-14",
-      "last_close_date": "2026-11-13",
-      "last_close": 192.47
+      "window_start": "2025-11-18",
+      "last_close_date": "2026-11-17",
+      "last_close": 185.19
     }
   }
 }
