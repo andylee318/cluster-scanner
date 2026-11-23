@@ -50,11 +50,20 @@ separated by commas.
 
 Intended to be run on a schedule (every 30 min during market hours) by
 GitHub Actions. Safe to also run manually / locally for testing.
+
+Robustness notes:
+    - download_data() retries any ticker that failed in the parallel batch
+      (e.g. yfinance's "database is locked" SQLite cache collision) one at
+      a time, so a transient failure no longer silently drops a ticker.
+    - send_telegram() splits long messages into <= 4000-char chunks on line
+      boundaries (Telegram's hard limit is 4096) and prints Telegram's
+      actual error body if a request is rejected.
 """
 
 import os
 import sys
 import json
+import time
 import html
 import datetime
 from collections import Counter
@@ -118,6 +127,15 @@ VOLUME_PCT_30MIN = 0.20   # runs within ~45 min of the open
 VOLUME_PCT_60MIN = 0.35   # runs within ~90 min of the open
 VOLUME_PCT_LATER = 0.60   # anything later
 
+# Telegram's hard limit is 4096 chars per message; stay a bit under it.
+TELEGRAM_MAX_CHARS = 4000
+
+# Download retry behaviour for tickers that failed in the parallel batch.
+DOWNLOAD_RETRY_ROUNDS = 2
+DOWNLOAD_RETRY_SLEEP_SEC = 1.0
+
+OHLCV_FIELDS = ["Open", "High", "Low", "Close", "Volume"]
+
 # ------------------------------------------------------------------------
 # MARKET HOURS GUARD
 # ------------------------------------------------------------------------
@@ -137,28 +155,73 @@ def is_market_open_now() -> bool:
 # ------------------------------------------------------------------------
 # DATA + PATTERN DETECTION
 # ------------------------------------------------------------------------
-def download_data(tickers, period="5d"):
-    """Download OHLCV data for `tickers` over `period` (daily interval).
-    Returns {ticker: DataFrame} for tickers with at least 2 valid rows."""
-    raw = yf.download(
-        tickers, period=period, interval="1d", progress=False, auto_adjust=True
-    )
+def _extract_ticker_df(raw, t):
+    """Pull one ticker's OHLCV frame out of a yf.download() result.
+    Handles both the MultiIndex layout (field, ticker) and the flat layout
+    some yfinance versions return for a single ticker."""
+    if raw is None or raw.empty:
+        return None
+    if isinstance(raw.columns, pd.MultiIndex):
+        df = pd.DataFrame({f: raw[f][t] for f in OHLCV_FIELDS})
+    else:
+        df = raw[OHLCV_FIELDS].copy()
+    return df.dropna()
+
+
+def _download_batch(tickers, period, threads=True):
+    """One yf.download() call for `tickers`. Returns {ticker: DataFrame} for
+    tickers with at least 2 valid rows. Tickers that failed are simply
+    absent from the result (the caller decides whether to retry)."""
+    if not tickers:
+        return {}
+    try:
+        raw = yf.download(
+            tickers,
+            period=period,
+            interval="1d",
+            progress=False,
+            auto_adjust=True,
+            threads=threads,
+        )
+    except Exception as e:
+        print(f"yf.download failed for {len(tickers)} tickers: {e}", file=sys.stderr)
+        return {}
+
     dfs = {}
     for t in tickers:
         try:
-            df = pd.DataFrame(
-                {
-                    "Open": raw["Open"][t],
-                    "High": raw["High"][t],
-                    "Low": raw["Low"][t],
-                    "Close": raw["Close"][t],
-                    "Volume": raw["Volume"][t],
-                }
-            ).dropna()
-            if len(df) >= 2:
+            df = _extract_ticker_df(raw, t)
+            if df is not None and len(df) >= 2:
                 dfs[t] = df
         except Exception:
             continue
+    return dfs
+
+
+def download_data(tickers, period="5d"):
+    """Download OHLCV data for `tickers` over `period` (daily interval).
+    Returns {ticker: DataFrame} for tickers with at least 2 valid rows.
+
+    The first pass is a fast multi-threaded batch. yfinance's threads can
+    collide on its SQLite cache ("database is locked"), which randomly
+    drops a ticker. Any ticker missing after the batch is retried
+    sequentially (threads=False), which avoids the lock contention."""
+    dfs = _download_batch(tickers, period, threads=True)
+
+    missing = [t for t in tickers if t not in dfs]
+    for attempt in range(1, DOWNLOAD_RETRY_ROUNDS + 1):
+        if not missing:
+            break
+        print(f"Retry {attempt}/{DOWNLOAD_RETRY_ROUNDS} ({period}): "
+              f"{len(missing)} missing ticker(s) -> {missing[:20]}"
+              f"{' ...' if len(missing) > 20 else ''}")
+        time.sleep(DOWNLOAD_RETRY_SLEEP_SEC)
+        dfs.update(_download_batch(missing, period, threads=False))
+        missing = [t for t in tickers if t not in dfs]
+
+    if missing:
+        print(f"Still missing after retries ({period}): {missing[:20]}"
+              f"{' ...' if len(missing) > 20 else ''}")
     return dfs
 
 
@@ -528,18 +591,56 @@ def industry_label(industry: str, multi_cluster_industries: set) -> str:
     return name
 
 
+def split_message(text: str, limit: int = TELEGRAM_MAX_CHARS) -> list:
+    """Split `text` into chunks of at most `limit` characters, breaking on
+    line boundaries so HTML tags (which never span lines in this script)
+    are never cut in half. A single line longer than `limit` (e.g. a huge
+    ticker roll-up) is broken at a ", " boundary instead."""
+    chunks, cur = [], ""
+    for line in text.split("\n"):
+        while len(line) > limit:
+            cut = line.rfind(", ", 0, limit)
+            cut = cut + 1 if cut > 0 else limit
+            if cur:
+                chunks.append(cur)
+                cur = ""
+            chunks.append(line[:cut])
+            line = line[cut:].lstrip()
+        if cur and len(cur) + 1 + len(line) > limit:
+            chunks.append(cur)
+            cur = line
+        else:
+            cur = f"{cur}\n{line}" if cur else line
+    if cur:
+        chunks.append(cur)
+    return [c for c in chunks if c.strip()]
+
+
 def send_telegram(text: str):
+    """Send `text` to Telegram, split into multiple messages if needed.
+    On a failed request, prints Telegram's error body (the 400 reason is
+    otherwise hidden by raise_for_status) and then raises."""
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    resp = requests.post(
-        url,
-        data={
-            "chat_id": TELEGRAM_CHAT_ID,
-            "text": text,
-            "parse_mode": "HTML",
-        },
-        timeout=15,
-    )
-    resp.raise_for_status()
+    chunks = split_message(text)
+    for i, chunk in enumerate(chunks, start=1):
+        resp = requests.post(
+            url,
+            data={
+                "chat_id": TELEGRAM_CHAT_ID,
+                "text": chunk,
+                "parse_mode": "HTML",
+            },
+            timeout=15,
+        )
+        if not resp.ok:
+            print(
+                f"Telegram error on chunk {i}/{len(chunks)} "
+                f"({len(chunk)} chars): {resp.status_code} {resp.text}",
+                file=sys.stderr,
+            )
+            resp.raise_for_status()
+        if i < len(chunks):
+            time.sleep(0.5)  # stay well under Telegram's rate limits
 
 
 # ------------------------------------------------------------------------
@@ -762,8 +863,9 @@ def main():
         details.append("")
 
     if volatility_hits:
+        # ">=" must be HTML-escaped (&gt;=) because the message uses HTML parse mode.
         details.append(
-            f"⚡ VOLATILITY Z-SCORE >= {VOLATILITY_Z_THRESHOLD} ({len(volatility_hits)} tickers):"
+            f"⚡ VOLATILITY Z-SCORE &gt;= {VOLATILITY_Z_THRESHOLD} ({len(volatility_hits)} tickers):"
         )
         for t, info in sorted(volatility_hits.items(), key=lambda x: -x[1]["z"]):
             sign = "+" if info["pct"] >= 0 else ""
@@ -789,13 +891,13 @@ def main():
         f"{len(upper_wick_clusters)} UpperWick / "
         f"{len(volume_clusters)} Volume / "
         f"{len(gap_up_clusters)} Gap-Up / "
-        f"{len(ath_clusters)} 52W-ATH"
+        f"{len(ath_clusters)} 52W-ATH / "
         f"{len(new_up_records)} Up-Records / "
         f"{len(new_down_records)} Down-Records / "
-        f"{len(volatility_hits)} Volatility / "
+        f"{len(volatility_hits)} Volatility"
     )
 
-    # compose the Telegram message
+    # compose the Telegram message (send_telegram splits it if it's too long)
     body = "\n".join(header + summary + details)
 
     send_telegram(body)
