@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T15:01:21Z",
+  "generated_at": "2026-11-23T15:16:39Z",
   "window_days": 365,
   "as_of": "2026-11-20",
   "source": "yfinance daily auto-adjusted close",
@@ -446,8 +446,8 @@
       "last_close": 86.79
     },
     "AVGO": {
-      "max_1d_gain_pct": 11.1,
-      "gain_date": "2025-11-24",
+      "max_1d_gain_pct": 8.78,
+      "gain_date": "2026-11-09",
       "max_1d_drop_pct": -12.59,
       "drop_date": "2026-06-04",
       "window_start": "2025-11-21",
@@ -581,8 +581,8 @@
       "last_close": 0.322
     },
     "BMNR": {
-      "max_1d_gain_pct": 19.62,
-      "gain_date": "2025-11-24",
+      "max_1d_gain_pct": 17.64,
+      "gain_date": "2026-02-06",
       "max_1d_drop_pct": -14.29,
       "drop_date": "2026-02-05",
       "window_start": "2025-11-21",
@@ -797,8 +797,8 @@
       "last_close": 23.83
     },
     "CLS": {
-      "max_1d_gain_pct": 15.17,
-      "gain_date": "2025-11-24",
+      "max_1d_gain_pct": 12.12,
+      "gain_date": "2026-10-27",
       "max_1d_drop_pct": -16.0,
       "drop_date": "2026-11-20",
       "window_start": "2025-11-21",
@@ -2228,8 +2228,8 @@
       "last_close": 51.98
     },
     "LITE": {
-      "max_1d_gain_pct": 17.13,
-      "gain_date": "2025-11-24",
+      "max_1d_gain_pct": 16.52,
+      "gain_date": "2026-05-11",
       "max_1d_drop_pct": -18.68,
       "drop_date": "2026-11-05",
       "window_start": "2025-11-21",
@@ -2777,8 +2777,8 @@
       "last_close": 60.84
     },
     "ONDS": {
-      "max_1d_gain_pct": 29.47,
-      "gain_date": "2025-11-24",
+      "max_1d_gain_pct": 26.52,
+      "gain_date": "2026-05-14",
       "max_1d_drop_pct": -14.94,
       "drop_date": "2026-02-04",
       "window_start": "2025-11-21",
@@ -2831,8 +2831,8 @@
       "last_close": 101.19
     },
     "OSCR": {
-      "max_1d_gain_pct": 22.33,
-      "gain_date": "2025-11-24",
+      "max_1d_gain_pct": 15.12,
+      "gain_date": "2026-06-04",
       "max_1d_drop_pct": -11.86,
       "drop_date": "2026-08-06",
       "window_start": "2025-11-21",
