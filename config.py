@@ -177,7 +177,7 @@ INDUSTRIES = {
 }
 
 KNOWN_STOCKS = [
-    'SN', 'NTSK', 'ANT', 'XTN', 'JBHT', 'KBWB', 'ICHR', 'RBRK', 'LYTE', 'LEN', 'PEJ', 'SOLT', 'ETHA', 'XXRP', 'BMNR', 'TWST', 'TEM', 'SMR', 'USAR', 'QBTS', 'QUBT', 'RGTI', 'FN', 'ZETA', 'ONON', 'TQQQ', 'RSP', 'BBY', 'AMPX', 'CBRS',
+    'MMM', 'PM', 'HSY', 'KHC', 'CMCSA', 'YUM', 'DG', 'ULTA', 'ORLY', 'AZO', 'AIG', 'PGR', 'FIG', 'HUBS', 'TLN', 'H', 'SN', 'NTSK', 'ANT', 'XTN', 'JBHT', 'KBWB', 'ICHR', 'RBRK', 'LYTE', 'LEN', 'PEJ', 'SOLT', 'ETHA', 'XXRP', 'BMNR', 'TWST', 'TEM', 'SMR', 'USAR', 'QBTS', 'QUBT', 'RGTI', 'FN', 'ZETA', 'ONON', 'TQQQ', 'RSP', 'BBY', 'AMPX', 'CBRS',
     'CME', 'ICE', 'NCLD', 'PALL', 'PLTM', 'IHF', 'ESTC', 'PRU', 'RGEN', 'UBS', 'TRV', 'WEN', 'OKLO', 'IBB', 'Q', 'OUST', 'VPG', 'WOLF', 'NOK', 'HSBC', 'DLTR', 'SKHY', 'RDDT', 'RL', 'CROX', 'LEVI', 'FOTO', 'GNRC', 'KLIC', 'IWM', 'HBMX', 'PWR', 'EUV', 'GRID', 'MAGS', 'SPCX', 'IBM', 'ELV', 'OSCR', 'QNT', 'HYDR', 'ALGM', 'LGN', 'IESC', 'AEHR', 'ACLS', 'MKSI', 'SMTC', 'AMKR', 
     'LSCC', 'DIOD', 'POWI', 'AA', 'ABBV', 'ALAB', 'AMGN', 'APO', 'BOTZ', 'CRCL', 'CRWV', 'D', 'DRAM', 'DUK', 'EEM', 'EWJ', 'EWY', 'EXC', 'FIGR', 
     'GEV', 'GILD', 'GXC', 'JEF', 'KMI', 'KRMN', 'LIN', 'MNST', 'NASA', 'NEM', 'NTR', 'OR', 
